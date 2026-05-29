@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calendrier — La Seconde</title>
+  <link rel="icon" type="image/png" href="data:image/png;base64,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">
+  <link rel="apple-touch-icon" href="data:image/png;base64,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">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="La Seconde">
+  <meta name="theme-color" content="#162715">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css">
+  <style>
+    .page-content { padding: 0 1.1rem 3rem; }
+    .page-title { font-family: "DM Serif Display", serif; font-size: 24px; color: var(--text); padding: 1.25rem 0 1rem; }
+    
+  .month-nav { display:flex; align-items:center; justify-content:space-between; margin-bottom:.75rem; }
+  .month-label { font-size:16px; font-weight:500; color:var(--text); }
+  .nav-btn { background:none; border:0.5px solid var(--green-border-strong); border-radius:6px; width:30px; height:30px; display:flex; align-items:center; justify-content:center; cursor:pointer; color:var(--text); font-size:14px; }
+  .nav-btn:hover { background:var(--green-light); }
+  .filter-row { display:flex; gap:5px; flex-wrap:wrap; margin-bottom:.85rem; }
+  .chip { display:flex; align-items:center; gap:5px; padding:3px 9px 3px 3px; border-radius:99px; border:0.5px solid var(--green-border-strong); background:transparent; cursor:pointer; font-size:12px; color:var(--muted); transition:all .12s; font-family:"DM Sans",sans-serif; }
+  .chip.active { background:var(--green); border-color:var(--green); color:#fff; }
+  .chip-av { width:20px; height:20px; border-radius:50%; font-size:8px; font-weight:500; display:flex; align-items:center; justify-content:center; }
+  .av-g { background:#2e4a2c; color:#fff; } .av-a { background:#4a7a47; color:#fff; } .av-k { background:#7a5c2e; color:#fff; } .av-all { background:rgba(22,39,21,.12); color:var(--green); }
+  .weekdays { display:grid; grid-template-columns:repeat(7,1fr); margin-bottom:4px; }
+  .wday { font-size:10px; letter-spacing:.08em; color:var(--muted); text-align:center; padding:3px 0; text-transform:uppercase; }
+  .days-grid { display:grid; grid-template-columns:repeat(7,1fr); gap:2px; margin-bottom:.75rem; }
+  .day-cell { min-height:46px; border-radius:6px; padding:4px 3px; cursor:pointer; transition:background .1s; }
+  .day-cell:hover { background:var(--green-light); }
+  .day-cell.other-month .day-num { color:var(--muted); opacity:.35; }
+  .day-num { font-size:12px; color:var(--text); width:22px; height:22px; display:flex; align-items:center; justify-content:center; border-radius:50%; }
+  .day-cell.today .day-num { background:var(--green); color:#fff; font-weight:500; }
+  .dots { display:flex; gap:2px; flex-wrap:wrap; margin-top:2px; padding-left:2px; }
+  .dot { width:5px; height:5px; border-radius:50%; }
+  .dot-g { background:#2e4a2c; } .dot-a { background:#4a7a47; } .dot-k { background:#7a5c2e; }
+  .divider { height:0.5px; background:var(--green-border); margin:0 0 .75rem; }
+  .section-label { font-size:10px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); margin-bottom:.5rem; }
+  .events-list { display:flex; flex-direction:column; gap:8px; }
+  .event-card { background:var(--bg); border:0.5px solid var(--green-border); border-radius:10px; padding:.7rem .9rem; display:flex; gap:10px; align-items:flex-start; cursor:pointer; transition:all .12s; }
+  .event-card:hover { border-color:var(--green-border-strong); background:var(--green-light); }
+  .event-bar { width:3px; border-radius:99px; align-self:stretch; min-height:28px; flex-shrink:0; }
+  .bar-g { background:#2e4a2c; } .bar-a { background:#4a7a47; } .bar-k { background:#7a5c2e; } .bar-multi { background:linear-gradient(180deg,#2e4a2c 33%,#4a7a47 33% 66%,#7a5c2e 66%); }
+  .event-body { flex:1; min-width:0; }
+  .event-title { font-size:13px; font-weight:500; color:var(--text); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .event-meta { font-size:11px; color:var(--muted); margin-top:3px; display:flex; align-items:center; gap:6px; }
+  .type-badge { font-size:10px; padding:1px 6px; border-radius:99px; border:0.5px solid var(--green-border-strong); color:var(--muted); }
+  .ev-avatars { display:flex; flex-shrink:0; margin-top:1px; }
+  .ev-av { width:20px; height:20px; border-radius:50%; font-size:8px; font-weight:500; display:flex; align-items:center; justify-content:center; border:1.5px solid #fff; margin-left:-4px; color:#fff; }
+  .ev-av:first-child { margin-left:0; }
+  .empty { text-align:center; color:var(--muted); font-size:13px; padding:2rem 0; }
+  .fab { position:fixed; bottom:24px; left:50%; transform:translateX(-50%); padding:0 22px; height:44px; background:var(--green); color:#fff; border:none; border-radius:99px; font-family:"DM Sans",sans-serif; font-size:13px; font-weight:500; cursor:pointer; display:flex; align-items:center; gap:7px; white-space:nowrap; z-index:10; }
+  .fab:hover { background:var(--green-mid); }
+  .overlay { display:none; position:fixed; inset:0; background:rgba(22,39,21,.4); z-index:300; align-items:flex-end; justify-content:center; }
+  .overlay.open { display:flex; }
+  .modal { background:var(--bg); border-radius:20px 20px 0 0; padding:1.25rem 1.25rem 2.5rem; width:100%; max-width:430px; border-top:0.5px solid var(--green-border-strong); max-height:92dvh; overflow-y:auto; }
+  .modal-handle { width:36px; height:4px; background:var(--green-border-strong); border-radius:99px; margin:0 auto 1rem; }
+  .modal-title { font-size:15px; font-weight:500; color:var(--text); margin-bottom:1.1rem; }
+  .form-row { margin-bottom:.85rem; }
+  .form-label { display:block; font-size:10px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); margin-bottom:5px; }
+  .form-input { width:100%; padding:9px 11px; font-size:13px; font-family:"DM Sans",sans-serif; border:0.5px solid var(--green-border-strong); border-radius:8px; background:var(--bg); color:var(--text); outline:none; }
+  .form-input:focus { border-color:var(--green); }
+  select.form-input { cursor:pointer; }
+  .two-col { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+  .members-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:6px; }
+  .m-opt { border:0.5px solid var(--green-border-strong); border-radius:8px; padding:7px 6px; display:flex; flex-direction:column; align-items:center; gap:5px; cursor:pointer; font-size:11px; color:var(--muted); transition:all .12s; }
+  .m-opt.sel { border-color:var(--green); background:var(--green-light); color:var(--text); font-weight:500; }
+  .m-opt .m-av { width:26px; height:26px; border-radius:50%; font-size:10px; font-weight:500; display:flex; align-items:center; justify-content:center; color:#fff; }
+  .modal-actions { display:flex; gap:8px; margin-top:1.1rem; }
+  .btn-cancel { flex:1; padding:10px; border:0.5px solid var(--green-border-strong); border-radius:8px; background:none; cursor:pointer; font-size:13px; font-family:"DM Sans",sans-serif; color:var(--muted); }
+  .btn-save { flex:2; padding:10px; border:none; border-radius:8px; background:var(--green); color:#fff; cursor:pointer; font-size:13px; font-weight:500; font-family:"DM Sans",sans-serif; }
+  .del-btn { margin-top:1rem; width:100%; padding:10px; border:0.5px solid rgba(192,57,43,.3); border-radius:8px; background:none; color:#b94040; font-size:13px; font-family:"DM Sans",sans-serif; cursor:pointer; }
+
+  </style>
+</head>
+<body>
+<script src="firebase-config.js"></script>
+<script src="shell.js"></script>
+<script>injectShell("app");</script>
+
+<div class="page-content">
+  <div class="page-title">Calendrier</div>
+  <div class="month-nav">
+    <button class="nav-btn" onclick="changeMonth(-1)"><i class="ti ti-chevron-left"></i></button>
+    <span class="month-label" id="month-label"></span>
+    <button class="nav-btn" onclick="changeMonth(1)"><i class="ti ti-chevron-right"></i></button>
+  </div>
+  <div class="filter-row">
+    <button class="chip active" data-f="all" onclick="setFilter(this,'all')"><div class="chip-av av-all"><i class="ti ti-users" style="font-size:10px"></i></div><span>Tous</span></button>
+    <button class="chip" data-f="Guillaume" onclick="setFilter(this,'Guillaume')"><div class="chip-av av-g">GU</div><span>Guillaume</span></button>
+    <button class="chip" data-f="Arthur" onclick="setFilter(this,'Arthur')"><div class="chip-av av-a">AR</div><span>Arthur</span></button>
+    <button class="chip" data-f="Kim" onclick="setFilter(this,'Kim')"><div class="chip-av av-k">KI</div><span>Kim</span></button>
+  </div>
+  <div class="weekdays"><div class="wday">L</div><div class="wday">M</div><div class="wday">M</div><div class="wday">J</div><div class="wday">V</div><div class="wday">S</div><div class="wday">D</div></div>
+  <div class="days-grid" id="days-grid"></div>
+  <div class="divider"></div>
+  <div class="section-label" id="section-label">Événements</div>
+  <div class="events-list" id="events-list"></div>
+</div>
+
+<button class="fab" onclick="openAddModal()"><i class="ti ti-plus"></i> Ajouter</button>
+
+<div class="overlay" id="add-overlay">
+  <div class="modal">
+    <div class="modal-handle"></div>
+    <p class="modal-title" id="modal-title">Nouvel événement</p>
+    <div class="form-row"><label class="form-label">Titre</label><input type="text" class="form-input" id="ev-title" placeholder="Ex : Expertise Rolex Daytona"></div>
+    <div class="form-row"><label class="form-label">Type</label><select class="form-input" id="ev-type"><option>Vente / Transaction</option><option>Rendez-vous client</option><option>Shooting / Contenu</option><option>Appel téléphonique</option></select></div>
+    <div class="form-row two-col"><div><label class="form-label">Date</label><input type="date" class="form-input" id="ev-date"></div><div><label class="form-label">Heure</label><input type="time" class="form-input" id="ev-time" value="10:00"></div></div>
+    <div class="form-row"><label class="form-label">Note (optionnel)</label><input type="text" class="form-input" id="ev-note" placeholder="Ex : Montre réf. 1234"></div>
+    <div class="form-row"><label class="form-label">Participants</label><div class="members-grid">
+      <div class="m-opt" data-m="Guillaume" onclick="toggleMember(this)"><div class="m-av av-g">GU</div><span>Guillaume</span></div>
+      <div class="m-opt" data-m="Arthur" onclick="toggleMember(this)"><div class="m-av av-a">AR</div><span>Arthur</span></div>
+      <div class="m-opt" data-m="Kim" onclick="toggleMember(this)"><div class="m-av av-k">KI</div><span>Kim</span></div>
+    </div></div>
+    <div class="modal-actions"><button class="btn-cancel" onclick="closeAddModal()">Annuler</button><button class="btn-save" onclick="saveEvent()">Enregistrer</button></div>
+  </div>
+</div>
+
+<div class="overlay" id="detail-overlay">
+  <div class="modal">
+    <div class="modal-handle"></div>
+    <div style="display:inline-block;font-size:11px;padding:2px 10px;border-radius:99px;border:0.5px solid var(--green-border-strong);color:var(--muted);margin-bottom:.6rem;" id="d-type"></div>
+    <div style="font-size:18px;font-weight:500;color:var(--text);margin-bottom:.75rem;" id="d-title"></div>
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:.5rem;font-size:13px;"><i class="ti ti-calendar" style="color:var(--muted);font-size:15px"></i><span id="d-date"></span></div>
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:.5rem;font-size:13px;"><i class="ti ti-clock" style="color:var(--muted);font-size:15px"></i><span id="d-time"></span></div>
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:.5rem;font-size:13px;" id="d-note-row"><i class="ti ti-note" style="color:var(--muted);font-size:15px"></i><span id="d-note"></span></div>
+    <div style="display:flex;align-items:flex-start;gap:8px;font-size:13px;"><i class="ti ti-users" style="color:var(--muted);font-size:15px;margin-top:2px"></i><div style="display:flex;gap:8px;flex-wrap:wrap;" id="d-members"></div></div>
+    <button class="del-btn" onclick="deleteEvent()"><i class="ti ti-trash" style="font-size:13px;vertical-align:-1px;margin-right:4px"></i>Supprimer</button>
+    <div class="modal-actions" style="margin-top:.75rem;"><button class="btn-cancel" onclick="closeDetailModal()">Fermer</button><button class="btn-save" onclick="editEvent()">Modifier</button></div>
+  </div>
+</div>
+
+<script type="module">
+  import { getDatabase, ref, onValue, push, remove, set } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js";
+  const MONTHS=["Janvier","Février","Mars","Avril","Mai","Juin","Juillet","Août","Septembre","Octobre","Novembre","Décembre"];
+  const MM={ Guillaume:{av:"av-g",initials:"GU",dot:"dot-g",bar:"bar-g"}, Arthur:{av:"av-a",initials:"AR",dot:"dot-a",bar:"bar-a"}, Kim:{av:"av-k",initials:"KI",dot:"dot-k",bar:"bar-k"} };
+  let currentDate=new Date(); currentDate.setDate(1);
+  let activeFilter="all", events={}, selectedMembers=new Set(), editingId=null, detailId=null;
+
+  initAuth((app) => {
+    const db=getDatabase(app);
+    onValue(ref(db,"events"), snap => { events=snap.val()||{}; render(); });
+
+    function render(){
+      const y=currentDate.getFullYear(), m=currentDate.getMonth();
+      document.getElementById("month-label").textContent=MONTHS[m]+" "+y;
+      const today=new Date();
+      let startDow=new Date(y,m,1).getDay(); if(startDow===0) startDow=7;
+      const dim=new Date(y,m+1,0).getDate(), dip=new Date(y,m,0).getDate();
+      const filtered=Object.entries(events).filter(([,e])=>activeFilter==="all"||(e.members||[]).includes(activeFilter));
+      const grid=document.getElementById("days-grid"); grid.innerHTML="";
+      for(let i=startDow-1;i>0;i--){ const c=document.createElement("div"); c.className="day-cell other-month"; c.innerHTML=`<div class="day-num">${dip-i+1}</div>`; grid.appendChild(c); }
+      for(let d=1;d<=dim;d++){
+        const ds=`${y}-${String(m+1).padStart(2,"0")}-${String(d).padStart(2,"0")}`;
+        const de=filtered.filter(([,e])=>e.date===ds);
+        const isT=today.getFullYear()===y&&today.getMonth()===m&&today.getDate()===d;
+        const c=document.createElement("div"); c.className="day-cell"+(isT?" today":"");
+        const dots=[...new Set(de.flatMap(([,e])=>e.members||[]))].map(mn=>MM[mn]?`<div class="dot ${MM[mn].dot}"></div>`:"").join("");
+        c.innerHTML=`<div class="day-num">${d}</div>${dots?`<div class="dots">${dots}</div>`:""}`;
+        grid.appendChild(c);
+      }
+      const monthEvs=filtered.filter(([,e])=>{const d=new Date(e.date);return d.getFullYear()===y&&d.getMonth()===m;}).sort((a,b)=>(a[1].date+a[1].time).localeCompare(b[1].date+b[1].time));
+      document.getElementById("section-label").textContent=monthEvs.length?`${monthEvs.length} événement${monthEvs.length>1?"s":""} ce mois`:"Aucun événement";
+      const list=document.getElementById("events-list"); list.innerHTML="";
+      if(!monthEvs.length){list.innerHTML='<div class="empty">Aucun événement ce mois</div>';return;}
+      monthEvs.forEach(([id,e])=>{
+        const ms=e.members||[]; const bc=ms.length>1?"bar-multi":(MM[ms[0]]?.bar||"bar-g");
+        const ds=new Date(e.date+"T12:00").toLocaleDateString("fr-FR",{weekday:"short",day:"numeric",month:"short"});
+        const avs=ms.map(mn=>MM[mn]?`<div class="ev-av ${MM[mn].av}">${MM[mn].initials}</div>`:"").join("");
+        const c=document.createElement("div"); c.className="event-card"; c.onclick=()=>openDetail(id);
+        c.innerHTML=`<div class="event-bar ${bc}"></div><div class="event-body"><div class="event-title">${e.title}</div><div class="event-meta"><i class="ti ti-clock" style="font-size:11px"></i>${e.time}·${ds}<span class="type-badge">${e.type}</span></div></div><div class="ev-avatars">${avs}</div>`;
+        list.appendChild(c);
+      });
+    }
+
+    window.changeMonth=(dir)=>{currentDate=new Date(currentDate.getFullYear(),currentDate.getMonth()+dir,1);render();};
+    window.setFilter=(el,key)=>{activeFilter=key;document.querySelectorAll(".chip").forEach(c=>c.classList.remove("active"));el.classList.add("active");render();};
+    window.openAddModal=()=>{editingId=null;selectedMembers=new Set();document.getElementById("modal-title").textContent="Nouvel événement";["ev-title","ev-note"].forEach(i=>document.getElementById(i).value="");document.getElementById("ev-date").value=new Date().toISOString().split("T")[0];document.getElementById("ev-time").value="10:00";document.getElementById("ev-type").value="Rendez-vous client";document.querySelectorAll(".m-opt").forEach(o=>o.classList.remove("sel"));document.getElementById("add-overlay").classList.add("open");};
+    window.closeAddModal=()=>document.getElementById("add-overlay").classList.remove("open");
+    window.toggleMember=(el)=>{const m=el.dataset.m;if(selectedMembers.has(m)){selectedMembers.delete(m);el.classList.remove("sel");}else{selectedMembers.add(m);el.classList.add("sel");}};
+    window.saveEvent=async()=>{const t=document.getElementById("ev-title").value.trim();const d=document.getElementById("ev-date").value;if(!t||!d||selectedMembers.size===0){alert("Remplis le titre, la date et au moins un participant.");return;}const p={title:t,type:document.getElementById("ev-type").value,date:d,time:document.getElementById("ev-time").value,note:document.getElementById("ev-note").value.trim(),members:[...selectedMembers]};if(editingId)await set(ref(db,"events/"+editingId),p);else await push(ref(db,"events"),p);closeAddModal();};
+    window.openDetail=(id)=>{detailId=id;const e=events[id];if(!e)return;document.getElementById("d-type").textContent=e.type;document.getElementById("d-title").textContent=e.title;document.getElementById("d-date").textContent=new Date(e.date+"T12:00").toLocaleDateString("fr-FR",{weekday:"long",day:"numeric",month:"long",year:"numeric"});document.getElementById("d-time").textContent=e.time;const nr=document.getElementById("d-note-row");if(e.note){document.getElementById("d-note").textContent=e.note;nr.style.display="flex";}else nr.style.display="none";document.getElementById("d-members").innerHTML=(e.members||[]).map(m=>MM[m]?`<div style="display:flex;align-items:center;gap:6px;"><div class="ev-av ${MM[m].av}" style="width:22px;height:22px;font-size:9px;border:none;">${MM[m].initials}</div>${m}</div>`:"").join("");document.getElementById("detail-overlay").classList.add("open");};
+    window.closeDetailModal=()=>document.getElementById("detail-overlay").classList.remove("open");
+    window.deleteEvent=async()=>{if(!detailId||!confirm("Supprimer cet événement ?"))return;await remove(ref(db,"events/"+detailId));closeDetailModal();};
+    window.editEvent=()=>{if(!detailId)return;const e=events[detailId];editingId=detailId;selectedMembers=new Set(e.members||[]);document.getElementById("modal-title").textContent="Modifier l'événement";document.getElementById("ev-title").value=e.title;document.getElementById("ev-type").value=e.type;document.getElementById("ev-date").value=e.date;document.getElementById("ev-time").value=e.time;document.getElementById("ev-note").value=e.note||"";document.querySelectorAll(".m-opt").forEach(o=>o.classList.toggle("sel",selectedMembers.has(o.dataset.m)));closeDetailModal();document.getElementById("add-overlay").classList.add("open");};
+  });
+</script>
+</body>
+</html>

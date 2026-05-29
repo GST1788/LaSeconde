@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard — La Seconde</title>
+  <link rel="icon" type="image/png" href="data:image/png;base64,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">
+  <link rel="apple-touch-icon" href="data:image/png;base64,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">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="La Seconde">
+  <meta name="theme-color" content="#162715">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css">
+  <style>
+    .page-content { padding: 0 1.1rem 3rem; }
+    .greeting { padding: 1.4rem 0 0.25rem; }
+    .greeting-sub { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
+    .greeting-name { font-family: "DM Serif Display", serif; font-size: 26px; color: var(--text); }
+
+    /* Stock quick KPIs */
+    .kpis { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin: 1.25rem 0; }
+    .kpi { background: var(--green); border-radius: 10px; padding: 0.85rem 0.75rem; }
+    .kpi-label { font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.55); margin-bottom: 4px; }
+    .kpi-val { font-size: 18px; font-weight: 500; color: #fff; }
+
+    /* Section */
+    .section-hdr { display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.75rem; }
+    .section-title { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+    .section-link { font-size: 12px; color: var(--muted); text-decoration: none; display: flex; align-items: center; gap: 3px; }
+    .section-link:hover { color: var(--text); }
+
+    /* Upcoming events */
+    .event-item {
+      display: flex; align-items: flex-start; gap: 12px;
+      padding: 0.85rem 0;
+      border-bottom: 0.5px solid var(--green-border);
+    }
+    .event-item:last-child { border-bottom: none; }
+    .event-date-col { flex-shrink: 0; width: 40px; text-align: center; }
+    .event-day { font-size: 22px; font-weight: 500; color: var(--text); line-height: 1; }
+    .event-mon { font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-top: 2px; }
+    .event-body { flex: 1; min-width: 0; }
+    .event-title { font-size: 14px; font-weight: 500; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .event-meta { font-size: 11px; color: var(--muted); margin-top: 3px; display: flex; align-items: center; gap: 6px; }
+    .event-type { font-size: 10px; padding: 2px 7px; border-radius: 99px; border: 0.5px solid var(--green-border-strong); color: var(--muted); }
+    .event-avatars { display: flex; margin-top: 3px; }
+    .ev-av { width: 18px; height: 18px; border-radius: 50%; font-size: 7px; font-weight: 500; display: flex; align-items: center; justify-content: center; color: #fff; margin-left: -3px; border: 1.5px solid #fff; }
+    .ev-av:first-child { margin-left: 0; }
+    .av-g { background: #2e4a2c; } .av-a { background: #4a7a47; } .av-k { background: #7a5c2e; }
+    .today-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green); flex-shrink: 0; margin-top: 6px; }
+
+    /* Upcoming posts */
+    .posts-row { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 4px; -webkit-overflow-scrolling: touch; }
+    .posts-row::-webkit-scrollbar { display: none; }
+    .post-mini {
+      flex-shrink: 0; width: 110px;
+      border: 0.5px solid var(--green-border); border-radius: 10px; overflow: hidden;
+      cursor: pointer; text-decoration: none;
+    }
+    .post-mini-img { width: 110px; height: 110px; background: var(--green-light); display: flex; align-items: center; justify-content: center; }
+    .post-mini-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .post-mini-body { padding: 6px 8px 8px; }
+    .post-mini-date { font-size: 9px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+    .post-mini-title { font-size: 11px; font-weight: 500; color: var(--text); margin-top: 1px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .status-dot-mini { width: 6px; height: 6px; border-radius: 50%; display: inline-block; margin-right: 3px; vertical-align: middle; }
+    .s-planned { background: #4a7a47; } .s-ready { background: #162715; } .s-published { background: #7a5c2e; }
+
+    /* Stock preview */
+    .stock-row { display: flex; flex-direction: column; gap: 0; border: 0.5px solid var(--green-border); border-radius: 10px; overflow: hidden; }
+    .stock-mini { display: flex; align-items: center; gap: 10px; padding: 0.7rem 0.85rem; border-bottom: 0.5px solid var(--green-border); text-decoration: none; }
+    .stock-mini:last-child { border-bottom: none; }
+    .stock-mini:hover { background: var(--green-light); }
+    .stock-img { width: 40px; height: 40px; border-radius: 6px; object-fit: cover; background: var(--green-light); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .stock-img img { width: 40px; height: 40px; border-radius: 6px; object-fit: cover; }
+    .stock-mini-body { flex: 1; min-width: 0; }
+    .stock-mini-name { font-size: 13px; font-weight: 500; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .stock-mini-price { font-size: 11px; color: var(--muted); margin-top: 1px; }
+    .stock-status { font-size: 10px; padding: 2px 7px; border-radius: 99px; font-weight: 500; flex-shrink: 0; }
+    .ss-dispo { background: rgba(74,122,71,0.12); color: #2e4a2c; }
+    .ss-reserve { background: rgba(122,92,46,0.12); color: #7a5c2e; }
+    .ss-vendu { background: rgba(22,39,21,0.08); color: var(--muted); }
+
+    .empty-state { text-align: center; padding: 2rem 0; color: var(--muted); font-size: 13px; }
+    .card-wrap { border: 0.5px solid var(--green-border); border-radius: 10px; padding: 0.25rem 0.85rem; }
+  </style>
+</head>
+<body>
+<script src="firebase-config.js"></script>
+<script src="shell.js"></script>
+<script>
+  injectShell("index");
+</script>
+
+<div class="page-content">
+  <div class="greeting">
+    <div class="greeting-sub">Bonjour</div>
+    <div class="greeting-name" id="greeting-name">—</div>
+  </div>
+
+  <!-- KPIs stock -->
+  <div class="kpis" id="kpis">
+    <div class="kpi"><div class="kpi-label">En stock</div><div class="kpi-val" id="k-stock">—</div></div>
+    <div class="kpi"><div class="kpi-label">Valeur</div><div class="kpi-val" id="k-valeur">—</div></div>
+    <div class="kpi"><div class="kpi-label">Vendus</div><div class="kpi-val" id="k-vendus">—</div></div>
+  </div>
+
+  <!-- Upcoming events -->
+  <div class="section-hdr" style="margin-top:0.5rem;">
+    <span class="section-title">Prochains événements</span>
+    <a class="section-link" href="app.html">Voir tout <i class="ti ti-arrow-right" style="font-size:12px"></i></a>
+  </div>
+  <div class="card-wrap" id="events-list"><div class="empty-state">Chargement…</div></div>
+
+  <!-- Upcoming posts -->
+  <div class="section-hdr" style="margin-top:1.5rem;">
+    <span class="section-title">Posts à venir</span>
+    <a class="section-link" href="instagram.html">Voir tout <i class="ti ti-arrow-right" style="font-size:12px"></i></a>
+  </div>
+  <div id="posts-row-wrap"><div class="empty-state">Chargement…</div></div>
+
+  <!-- Stock aperçu -->
+  <div class="section-hdr" style="margin-top:1.5rem;">
+    <span class="section-title">Stock disponible</span>
+    <a class="section-link" href="stock.html">Voir tout <i class="ti ti-arrow-right" style="font-size:12px"></i></a>
+  </div>
+  <div id="stock-wrap"><div class="empty-state">Chargement…</div></div>
+</div>
+
+<script type="module">
+  import { getDatabase, ref, onValue } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js";
+
+  const MONTHS_FR = ["jan","fév","mar","avr","mai","jun","jul","aoû","sep","oct","nov","déc"];
+  const MONTHS_FULL = ["Janvier","Février","Mars","Avril","Mai","Juin","Juillet","Août","Septembre","Octobre","Novembre","Décembre"];
+  const MEMBER_META = {
+    Guillaume: { av: "av-g", initials: "GU" },
+    Arthur:    { av: "av-a", initials: "AR" },
+    Kim:       { av: "av-k", initials: "KI" },
+  };
+  const STATUS_S = { Disponible:"ss-dispo", "Réservé":"ss-reserve", Vendu:"ss-vendu" };
+  const STATUS_DOT = { planned:"s-planned", ready:"s-ready", published:"s-published" };
+
+  initAuth((app, user) => {
+    const name = user.displayName || user.email.split("@")[0];
+    document.getElementById("greeting-name").textContent = name;
+    const db = getDatabase(app);
+
+    // Events
+    onValue(ref(db,"events"), snap => {
+      const all = Object.entries(snap.val()||{});
+      const now = new Date(); now.setHours(0,0,0,0);
+      const upcoming = all
+        .filter(([,e]) => new Date(e.date+"T23:59") >= now)
+        .sort((a,b) => (a[1].date+a[1].time).localeCompare(b[1].date+b[1].time))
+        .slice(0,5);
+      const el = document.getElementById("events-list");
+      if (!upcoming.length) { el.innerHTML = "<div class=\"empty-state\">Aucun événement à venir</div>"; return; }
+      el.innerHTML = upcoming.map(([,e]) => {
+        const d = new Date(e.date+"T12:00");
+        const isToday = d.toDateString() === new Date().toDateString();
+        const members = (e.members||[]).map(m => MEMBER_META[m] ? `<div class="ev-av ${MEMBER_META[m].av}">${MEMBER_META[m].initials}</div>` : "").join("");
+        return `<div class="event-item">
+          <div class="event-date-col">
+            <div class="event-day" style="${isToday?"color:var(--green);font-weight:700;":""}">${d.getDate()}</div>
+            <div class="event-mon">${MONTHS_FR[d.getMonth()]}</div>
+          </div>
+          ${isToday ? '<div class="today-dot"></div>' : ''}
+          <div class="event-body">
+            <div class="event-title">${e.title}</div>
+            <div class="event-meta">
+              <i class="ti ti-clock" style="font-size:11px"></i>${e.time}
+              <span class="event-type">${e.type}</span>
+            </div>
+            <div class="event-avatars">${members}</div>
+          </div>
+        </div>`;
+      }).join("");
+    });
+
+    // Posts
+    onValue(ref(db,"posts"), snap => {
+      const all = Object.entries(snap.val()||{});
+      const now = new Date(); now.setHours(0,0,0,0);
+      const upcoming = all
+        .filter(([,p]) => p.status !== "published" && new Date(p.date+"T23:59") >= now)
+        .sort((a,b) => a[1].date.localeCompare(b[1].date))
+        .slice(0,6);
+      const wrap = document.getElementById("posts-row-wrap");
+      if (!upcoming.length) { wrap.innerHTML = "<div class=\"empty-state\">Aucun post planifié</div>"; return; }
+      wrap.innerHTML = `<div class="posts-row">${upcoming.map(([,p]) => {
+        const d = new Date(p.date+"T12:00");
+        const imgUrl = (p.imageUrls||[])[0] || p.imageUrl;
+        const dot = STATUS_DOT[p.status]||"s-planned";
+        return `<a class="post-mini" href="instagram.html">
+          <div class="post-mini-img">${imgUrl ? `<img src="${imgUrl}" alt="${p.title}">` : `<i class="ti ti-photo" style="font-size:24px;color:var(--muted)"></i>`}</div>
+          <div class="post-mini-body">
+            <div class="post-mini-date">${d.getDate()} ${MONTHS_FR[d.getMonth()]}</div>
+            <div class="post-mini-title">${p.title}</div>
+          </div>
+        </a>`;
+      }).join("")}</div>`;
+    });
+
+    // Stock
+    onValue(ref(db,"stock"), snap => {
+      const all = Object.entries(snap.val()||{});
+      const dispo = all.filter(([,w]) => w.status === "Disponible").slice(0,4);
+      const inStock = all.filter(([,w]) => w.status !== "Vendu").length;
+      const valeur = all.filter(([,w]) => w.status !== "Vendu").reduce((s,[,w]) => s+Number(w.sell||0),0);
+      const vendus = all.filter(([,w]) => w.status === "Vendu").length;
+      document.getElementById("k-stock").textContent = inStock||"0";
+      document.getElementById("k-valeur").textContent = valeur ? (valeur/1000).toFixed(0)+"k€" : "—";
+      document.getElementById("k-vendus").textContent = vendus||"0";
+      const wrap = document.getElementById("stock-wrap");
+      if (!dispo.length) { wrap.innerHTML = "<div class=\"empty-state\">Aucune montre disponible</div>"; return; }
+      wrap.innerHTML = `<div class="stock-row">${dispo.map(([,w]) => `
+        <a class="stock-mini" href="stock.html">
+          <div class="stock-img">${w.imageUrl ? `<img src="${w.imageUrl}" alt="${w.brand}">` : `<i class="ti ti-watch" style="font-size:18px;color:var(--muted)"></i>`}</div>
+          <div class="stock-mini-body">
+            <div class="stock-mini-name">${w.brand} ${w.model}</div>
+            <div class="stock-mini-price">${w.sell ? Number(w.sell).toLocaleString("fr-FR")+" €" : "—"}</div>
+          </div>
+          <span class="stock-status ${STATUS_S[w.status]||"ss-dispo"}">${w.status}</span>
+        </a>`).join("")}</div>`;
+    });
+  });
+</script>
+</body>
+</html>
