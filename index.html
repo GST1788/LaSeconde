@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Connexion — Horologio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --green: #162715;
+      --green-mid: #2e4a2c;
+      --green-light: rgba(22,39,21,0.08);
+      --green-border: rgba(22,39,21,0.2);
+      --text: #162715;
+      --muted: rgba(22,39,21,0.5);
+      --bg: #ffffff;
+      --error: #c0392b;
+    }
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1.5rem;
+    }
+    .logo {
+      font-family: 'DM Serif Display', serif;
+      font-size: 28px;
+      color: var(--green);
+      letter-spacing: 0.02em;
+      margin-bottom: 0.25rem;
+    }
+    .tagline {
+      font-size: 12px;
+      color: var(--muted);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 2.5rem;
+    }
+    .card {
+      width: 100%;
+      max-width: 360px;
+      border: 0.5px solid var(--green-border);
+      border-radius: 16px;
+      padding: 2rem 1.5rem;
+    }
+    .card-title {
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--text);
+      margin-bottom: 1.5rem;
+    }
+    .form-group { margin-bottom: 1rem; }
+    label {
+      display: block;
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+    input {
+      width: 100%;
+      padding: 10px 12px;
+      font-size: 14px;
+      font-family: 'DM Sans', sans-serif;
+      border: 0.5px solid var(--green-border);
+      border-radius: 8px;
+      background: var(--bg);
+      color: var(--text);
+      outline: none;
+      transition: border-color 0.15s;
+    }
+    input:focus { border-color: var(--green); }
+    .btn {
+      width: 100%;
+      padding: 11px;
+      background: var(--green);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      margin-top: 0.5rem;
+      transition: background 0.15s;
+    }
+    .btn:hover { background: var(--green-mid); }
+    .btn:disabled { opacity: 0.5; cursor: not-allowed; }
+    .error-msg {
+      font-size: 12px;
+      color: var(--error);
+      margin-top: 0.75rem;
+      text-align: center;
+      min-height: 18px;
+    }
+    .footer-note {
+      font-size: 11px;
+      color: var(--muted);
+      text-align: center;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">Horologio</div>
+  <div class="tagline">Espace équipe</div>
+
+  <div class="card">
+    <p class="card-title">Connexion</p>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="prenom@exemple.com" autocomplete="email" />
+    </div>
+    <div class="form-group">
+      <label for="password">Mot de passe</label>
+      <input type="password" id="password" placeholder="••••••••" autocomplete="current-password" />
+    </div>
+    <button class="btn" id="login-btn" onclick="handleLogin()">Se connecter</button>
+    <div class="error-msg" id="error-msg"></div>
+  </div>
+
+  <p class="footer-note">Accès réservé à l'équipe</p>
+
+  <script src="firebase-config.js"></script>
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+    import { getAuth, signInWithEmailAndPassword, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+
+    onAuthStateChanged(auth, (user) => {
+      if (user) window.location.href = "app.html";
+    });
+
+    window.handleLogin = async function () {
+      const email = document.getElementById("email").value.trim();
+      const password = document.getElementById("password").value;
+      const btn = document.getElementById("login-btn");
+      const errEl = document.getElementById("error-msg");
+      errEl.textContent = "";
+      if (!email || !password) { errEl.textContent = "Remplis tous les champs."; return; }
+      btn.disabled = true;
+      btn.textContent = "Connexion…";
+      try {
+        await signInWithEmailAndPassword(auth, email, password);
+      } catch (e) {
+        const msgs = {
+          "auth/invalid-credential": "Email ou mot de passe incorrect.",
+          "auth/too-many-requests": "Trop de tentatives. Réessaie plus tard.",
+          "auth/user-disabled": "Ce compte est désactivé.",
+        };
+        errEl.textContent = msgs[e.code] || "Erreur de connexion.";
+        btn.disabled = false;
+        btn.textContent = "Se connecter";
+      }
+    };
+
+    document.getElementById("password").addEventListener("keydown", (e) => {
+      if (e.key === "Enter") window.handleLogin();
+    });
+  </script>
+</body>
+</html>
