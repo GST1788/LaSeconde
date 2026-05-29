@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="data:image/png;base64,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">
+  <link rel="apple-touch-icon" href="data:image/png;base64,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">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="La Seconde">
+  <meta name="theme-color" content="#162715">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacts — La Seconde</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --green: #162715; --green-mid: #2e4a2c;
+      --green-light: rgba(22,39,21,0.06);
+      --green-border: rgba(22,39,21,0.15);
+      --green-border-strong: rgba(22,39,21,0.25);
+      --text: #162715; --muted: rgba(22,39,21,0.48); --bg: #ffffff;
+    }
+    body { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--text); max-width: 420px; margin: 0 auto; min-height: 100dvh; padding-bottom: 6rem; }
+    .header { position: sticky; top: 0; background: var(--bg); z-index: 5; border-bottom: 0.5px solid var(--green-border-strong); padding: 1rem 1rem 0.75rem; }
+    .header-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.75rem; }
+    .logo { font-family: 'DM Serif Display', serif; font-size: 20px; color: var(--green); }
+    .user-pill { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--muted); cursor: pointer; border: 0.5px solid var(--green-border); border-radius: 99px; padding: 4px 10px 4px 4px; }
+    .user-pill:hover { background: var(--green-light); }
+    .user-avatar { width: 22px; height: 22px; border-radius: 50%; background: var(--green); color: #fff; font-size: 9px; font-weight: 500; display: flex; align-items: center; justify-content: center; }
+    .nav-links { display: flex; gap: 6px; margin-bottom: 0.75rem; flex-wrap: wrap; }
+    .nav-link { font-size: 12px; color: var(--muted); border: 0.5px solid var(--green-border); border-radius: 99px; padding: 4px 12px; text-decoration: none; }
+    .nav-link.active { background: var(--green); color: #fff; border-color: var(--green); }
+    .search-wrap { margin-bottom: 0; }
+    .search-input { width: 100%; padding: 9px 11px 9px 34px; font-size: 13px; font-family: 'DM Sans', sans-serif; border: 0.5px solid var(--green-border-strong); border-radius: 8px; background: var(--bg); color: var(--text); outline: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='rgba(22,39,21,0.4)' stroke-width='2'%3E%3Ccircle cx='11' cy='11' r='8'/%3E%3Cpath d='m21 21-4.35-4.35'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: 10px center; }
+    .search-input:focus { border-color: var(--green); }
+    .filter-tabs { display: flex; gap: 4px; padding: 0.75rem 1rem 0; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .filter-tabs::-webkit-scrollbar { display: none; }
+    .ftab { flex-shrink: 0; font-size: 12px; color: var(--muted); border: 0.5px solid var(--green-border); border-radius: 99px; padding: 4px 12px; cursor: pointer; background: none; font-family: 'DM Sans', sans-serif; transition: all 0.12s; }
+    .ftab.active { background: var(--green); color: #fff; border-color: var(--green); }
+    .contacts-list { padding: 0.75rem 1rem; display: flex; flex-direction: column; gap: 6px; }
+    .section-header { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); padding: 0.5rem 0 0.25rem; }
+    .contact-card { border: 0.5px solid var(--green-border); border-radius: 10px; padding: 0.75rem; display: flex; align-items: center; gap: 12px; cursor: pointer; transition: all 0.12s; }
+    .contact-card:hover { border-color: var(--green-border-strong); background: var(--green-light); }
+    .contact-av { width: 40px; height: 40px; border-radius: 50%; flex-shrink: 0; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 500; color: #fff; }
+    .av-fournisseur { background: #2e4a2c; }
+    .av-expert { background: #4a7a47; }
+    .av-acteur { background: #7a5c2e; }
+    .contact-body { flex: 1; min-width: 0; }
+    .contact-name { font-size: 14px; font-weight: 500; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .contact-sub { font-size: 11px; color: var(--muted); margin-top: 1px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .cat-pill { font-size: 10px; padding: 2px 8px; border-radius: 99px; font-weight: 500; display: inline-block; white-space: nowrap; }
+    .pill-fournisseur { background: rgba(46,74,44,0.1); color: #2e4a2c; }
+    .pill-expert { background: rgba(74,122,71,0.1); color: #3a6238; }
+    .pill-acteur { background: rgba(122,92,46,0.1); color: #7a5c2e; }
+    .contact-actions { display: flex; gap: 6px; flex-shrink: 0; }
+    .icon-btn { width: 32px; height: 32px; border-radius: 8px; border: 0.5px solid var(--green-border-strong); background: none; display: flex; align-items: center; justify-content: center; cursor: pointer; color: var(--muted); font-size: 15px; text-decoration: none; }
+    .icon-btn:hover { background: var(--green-light); color: var(--text); }
+    .empty { text-align: center; color: var(--muted); font-size: 13px; padding: 3rem 0; }
+    .loading { text-align: center; color: var(--muted); font-size: 13px; padding: 3rem 0; }
+    .fab { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); padding: 0 22px; height: 44px; background: var(--green); color: #fff; border: none; border-radius: 99px; font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 500; cursor: pointer; display: flex; align-items: center; gap: 7px; white-space: nowrap; }
+    .fab:hover { background: var(--green-mid); }
+    .overlay { display: none; position: fixed; inset: 0; background: rgba(22,39,21,0.4); z-index: 20; align-items: flex-end; justify-content: center; }
+    .overlay.open { display: flex; }
+    .modal { background: var(--bg); border-radius: 20px 20px 0 0; padding: 1.25rem 1.25rem 2.5rem; width: 100%; max-width: 420px; border-top: 0.5px solid var(--green-border-strong); max-height: 92dvh; overflow-y: auto; }
+    .modal-handle { width: 36px; height: 4px; background: var(--green-border-strong); border-radius: 99px; margin: 0 auto 1rem; }
+    .modal-title { font-size: 15px; font-weight: 500; color: var(--text); margin-bottom: 1.1rem; }
+    .form-row { margin-bottom: 0.85rem; }
+    .form-label { display: block; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 5px; }
+    .form-input { width: 100%; padding: 9px 11px; font-size: 13px; font-family: 'DM Sans', sans-serif; border: 0.5px solid var(--green-border-strong); border-radius: 8px; background: var(--bg); color: var(--text); outline: none; }
+    .form-input:focus { border-color: var(--green); }
+    select.form-input { cursor: pointer; }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .modal-actions { display: flex; gap: 8px; margin-top: 1.1rem; }
+    .btn-cancel { flex: 1; padding: 10px; border: 0.5px solid var(--green-border-strong); border-radius: 8px; background: none; cursor: pointer; font-size: 13px; font-family: 'DM Sans', sans-serif; color: var(--muted); }
+    .btn-save { flex: 2; padding: 10px; border: none; border-radius: 8px; background: var(--green); color: #fff; cursor: pointer; font-size: 13px; font-weight: 500; font-family: 'DM Sans', sans-serif; }
+    .detail-av { width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: 500; color: #fff; margin: 0 auto 0.75rem; }
+    .detail-name { font-size: 20px; font-weight: 500; color: var(--text); text-align: center; margin-bottom: 0.25rem; }
+    .detail-cat { text-align: center; margin-bottom: 1rem; }
+    .detail-row { display: flex; align-items: center; gap: 10px; padding: 0.6rem 0; border-top: 0.5px solid var(--green-border); font-size: 13px; color: var(--text); }
+    .detail-row i { font-size: 16px; color: var(--muted); flex-shrink: 0; }
+    .detail-row a { color: var(--green); text-decoration: none; }
+    .detail-actions { display: flex; gap: 8px; margin-top: 1rem; }
+    .action-btn { flex: 1; padding: 10px; border: 0.5px solid var(--green-border-strong); border-radius: 8px; background: none; cursor: pointer; font-size: 13px; font-family: 'DM Sans', sans-serif; color: var(--text); display: flex; align-items: center; justify-content: center; gap: 6px; text-decoration: none; }
+    .action-btn:hover { background: var(--green-light); }
+    .action-btn.call { background: var(--green); color: #fff; border-color: var(--green); }
+    .del-btn { margin-top: 0.75rem; width: 100%; padding: 10px; border: 0.5px solid rgba(192,57,43,0.3); border-radius: 8px; background: none; color: #c0392b; font-size: 13px; font-family: 'DM Sans', sans-serif; cursor: pointer; }
+    .del-btn:hover { background: rgba(192,57,43,0.05); }
+  </style>
+</head>
+<body>
+<div class="header">
+  <div class="header-row">
+    <img src="data:image/png;base64,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" alt="La Seconde" style="height:36px;width:auto;">
+    <div class="user-pill" id="user-pill" onclick="handleLogout()">
+      <div class="user-avatar" id="user-initials">?</div>
+      <span id="user-name">…</span>
+      <i class="ti ti-logout" style="font-size:13px"></i>
+    </div>
+  </div>
+  <div class="nav-links">
+    <a class="nav-link" href="app.html">Calendrier</a>
+    <a class="nav-link" href="instagram.html">Instagram</a>
+    <a class="nav-link" href="stock.html">Stock</a>
+    <a class="nav-link" href="stats.html">Stats</a>
+    <a class="nav-link active" href="contacts.html">Contacts</a>
+  </div>
+  <div class="search-wrap">
+    <input type="text" class="search-input" id="search" placeholder="Rechercher un contact…" oninput="render()">
+  </div>
+</div>
+
+<div class="filter-tabs">
+  <button class="ftab active" data-f="all" onclick="setFilter(this,'all')">Tous</button>
+  <button class="ftab" data-f="Fournisseur" onclick="setFilter(this,'Fournisseur')">Fournisseurs</button>
+  <button class="ftab" data-f="Expert / Horloger" onclick="setFilter(this,'Expert / Horloger')">Experts</button>
+  <button class="ftab" data-f="Acteur du milieu" onclick="setFilter(this,'Acteur du milieu')">Acteurs</button>
+</div>
+
+<div class="contacts-list" id="contacts-list"><div class="loading">Chargement…</div></div>
+
+<button class="fab" onclick="openAddModal()"><i class="ti ti-plus"></i> Ajouter</button>
+
+<!-- Add modal -->
+<div class="overlay" id="add-overlay">
+  <div class="modal">
+    <div class="modal-handle"></div>
+    <p class="modal-title" id="modal-title">Nouveau contact</p>
+    <div class="form-row two-col">
+      <div>
+        <label class="form-label">Prénom</label>
+        <input type="text" class="form-input" id="c-first" placeholder="Jean">
+      </div>
+      <div>
+        <label class="form-label">Nom</label>
+        <input type="text" class="form-input" id="c-last" placeholder="Dupont">
+      </div>
+    </div>
+    <div class="form-row">
+      <label class="form-label">Catégorie</label>
+      <select class="form-input" id="c-cat">
+        <option value="Fournisseur">Fournisseur</option>
+        <option value="Expert / Horloger">Expert / Horloger</option>
+        <option value="Acteur du milieu">Acteur du milieu</option>
+      </select>
+    </div>
+    <div class="form-row">
+      <label class="form-label">Entreprise / Marque (optionnel)</label>
+      <input type="text" class="form-input" id="c-company" placeholder="Ex : Atelier Durand">
+    </div>
+    <div class="form-row">
+      <label class="form-label">Téléphone</label>
+      <input type="tel" class="form-input" id="c-phone" placeholder="+33 6 00 00 00 00">
+    </div>
+    <div class="form-row">
+      <label class="form-label">Email (optionnel)</label>
+      <input type="email" class="form-input" id="c-email" placeholder="jean@exemple.com">
+    </div>
+    <div class="form-row">
+      <label class="form-label">Instagram (optionnel)</label>
+      <input type="text" class="form-input" id="c-insta" placeholder="@compte">
+    </div>
+    <div class="form-row">
+      <label class="form-label">Notes (optionnel)</label>
+      <input type="text" class="form-input" id="c-notes" placeholder="Spécialiste Rolex, très fiable…">
+    </div>
+    <div class="modal-actions">
+      <button class="btn-cancel" onclick="closeAddModal()">Annuler</button>
+      <button class="btn-save" onclick="saveContact()">Enregistrer</button>
+    </div>
+  </div>
+</div>
+
+<!-- Detail modal -->
+<div class="overlay" id="detail-overlay">
+  <div class="modal">
+    <div class="modal-handle"></div>
+    <div class="detail-av" id="d-av"></div>
+    <div class="detail-name" id="d-name"></div>
+    <div class="detail-cat"><span class="cat-pill" id="d-cat"></span></div>
+    <div id="d-company-row" class="detail-row"><i class="ti ti-building"></i><span id="d-company"></span></div>
+    <div id="d-phone-row" class="detail-row"><i class="ti ti-phone"></i><a id="d-phone" href="#"></a></div>
+    <div id="d-email-row" class="detail-row"><i class="ti ti-mail"></i><a id="d-email" href="#"></a></div>
+    <div id="d-insta-row" class="detail-row"><i class="ti ti-brand-instagram"></i><span id="d-insta"></span></div>
+    <div id="d-notes-row" class="detail-row"><i class="ti ti-note"></i><span id="d-notes"></span></div>
+    <div class="detail-actions">
+      <a class="action-btn call" id="d-call-btn" href="#"><i class="ti ti-phone" style="font-size:14px"></i> Appeler</a>
+      <a class="action-btn" id="d-sms-btn" href="#"><i class="ti ti-message" style="font-size:14px"></i> SMS</a>
+    </div>
+    <button class="del-btn" onclick="deleteContact()"><i class="ti ti-trash" style="font-size:13px;vertical-align:-1px;margin-right:4px"></i>Supprimer le contact</button>
+    <div class="modal-actions" style="margin-top:0.75rem;">
+      <button class="btn-cancel" onclick="closeDetailModal()">Fermer</button>
+      <button class="btn-save" onclick="editContact()">Modifier</button>
+    </div>
+  </div>
+</div>
+
+<script src="firebase-config.js"></script>
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+  import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
+  import { getDatabase, ref, onValue, push, remove, set } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js";
+
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+  const db = getDatabase(app);
+
+  onAuthStateChanged(auth, (user) => {
+    if (!user) { window.location.href = "index.html"; return; }
+    const name = user.displayName || user.email.split("@")[0];
+    document.getElementById("user-name").textContent = name;
+    document.getElementById("user-initials").textContent = name.slice(0,2).toUpperCase();
+    subscribeContacts();
+  });
+  window.handleLogout = async () => { await signOut(auth); window.location.href = "index.html"; };
+
+  const CAT_CLS = { 'Fournisseur': 'fournisseur', 'Expert / Horloger': 'expert', 'Acteur du milieu': 'acteur' };
+  let contacts = {}, activeFilter = 'all', editingId = null, detailId = null;
+
+  function subscribeContacts() {
+    onValue(ref(db, 'contacts'), (snap) => { contacts = snap.val() || {}; render(); });
+  }
+
+  function initials(c) { return ((c.first||'').slice(0,1) + (c.last||'').slice(0,1)).toUpperCase(); }
+
+  window.render = function() {
+    const q = document.getElementById('search').value.toLowerCase();
+    const entries = Object.entries(contacts).filter(([,c]) => {
+      const matchF = activeFilter === 'all' || c.category === activeFilter;
+      const matchQ = !q || (c.first+c.last+(c.company||'')).toLowerCase().includes(q);
+      return matchF && matchQ;
+    }).sort((a,b) => (a[1].last+a[1].first).localeCompare(b[1].last+b[1].first));
+
+    const list = document.getElementById('contacts-list');
+    list.innerHTML = '';
+    if (!entries.length) { list.innerHTML = '<div class="empty">Aucun contact trouvé</div>'; return; }
+
+    // Group by first letter
+    const groups = {};
+    entries.forEach(([id,c]) => {
+      const letter = (c.last||c.first||'?')[0].toUpperCase();
+      if (!groups[letter]) groups[letter] = [];
+      groups[letter].push([id,c]);
+    });
+
+    Object.keys(groups).sort().forEach(letter => {
+      const hdr = document.createElement('div');
+      hdr.className = 'section-header';
+      hdr.textContent = letter;
+      list.appendChild(hdr);
+      groups[letter].forEach(([id,c]) => {
+        const cls = CAT_CLS[c.category] || 'fournisseur';
+        const card = document.createElement('div');
+        card.className = 'contact-card';
+        card.onclick = () => openDetail(id);
+        card.innerHTML = `
+          <div class="contact-av av-${cls}">${initials(c)}</div>
+          <div class="contact-body">
+            <div class="contact-name">${c.first} ${c.last}</div>
+            <div class="contact-sub">${c.company || c.category}</div>
+          </div>
+          <div class="contact-actions">
+            ${c.phone ? `<a class="icon-btn" href="tel:${c.phone}" onclick="event.stopPropagation()"><i class="ti ti-phone"></i></a>` : ''}
+            ${c.phone ? `<a class="icon-btn" href="sms:${c.phone}" onclick="event.stopPropagation()"><i class="ti ti-message"></i></a>` : ''}
+          </div>`;
+        list.appendChild(card);
+      });
+    });
+  };
+
+  window.setFilter = (el, key) => {
+    activeFilter = key;
+    document.querySelectorAll('.ftab').forEach(t => t.classList.remove('active'));
+    el.classList.add('active');
+    render();
+  };
+
+  window.openAddModal = () => {
+    editingId = null;
+    document.getElementById('modal-title').textContent = 'Nouveau contact';
+    ['c-first','c-last','c-company','c-phone','c-email','c-insta','c-notes'].forEach(id => document.getElementById(id).value = '');
+    document.getElementById('c-cat').value = 'Fournisseur';
+    document.getElementById('add-overlay').classList.add('open');
+  };
+  window.closeAddModal = () => document.getElementById('add-overlay').classList.remove('open');
+
+  window.saveContact = async () => {
+    const first = document.getElementById('c-first').value.trim();
+    const last = document.getElementById('c-last').value.trim();
+    if (!first && !last) { alert('Remplis au moins le prénom ou le nom.'); return; }
+    const payload = {
+      first, last,
+      category: document.getElementById('c-cat').value,
+      company: document.getElementById('c-company').value.trim(),
+      phone: document.getElementById('c-phone').value.trim(),
+      email: document.getElementById('c-email').value.trim(),
+      insta: document.getElementById('c-insta').value.trim(),
+      notes: document.getElementById('c-notes').value.trim(),
+    };
+    if (editingId) await set(ref(db, 'contacts/' + editingId), payload);
+    else await push(ref(db, 'contacts'), payload);
+    closeAddModal();
+  };
+
+  window.openDetail = (id) => {
+    detailId = id;
+    const c = contacts[id]; if (!c) return;
+    const cls = CAT_CLS[c.category] || 'fournisseur';
+    const catPillCls = 'pill-' + cls;
+    document.getElementById('d-av').className = `detail-av av-${cls}`;
+    document.getElementById('d-av').textContent = initials(c);
+    document.getElementById('d-name').textContent = `${c.first} ${c.last}`;
+    const catEl = document.getElementById('d-cat');
+    catEl.textContent = c.category; catEl.className = `cat-pill ${catPillCls}`;
+    const show = (rowId, val) => { document.getElementById(rowId).style.display = val ? 'flex' : 'none'; };
+    show('d-company-row', c.company); document.getElementById('d-company').textContent = c.company;
+    show('d-phone-row', c.phone);
+    const phoneEl = document.getElementById('d-phone');
+    phoneEl.textContent = c.phone; phoneEl.href = `tel:${c.phone}`;
+    show('d-email-row', c.email);
+    const emailEl = document.getElementById('d-email');
+    emailEl.textContent = c.email; emailEl.href = `mailto:${c.email}`;
+    show('d-insta-row', c.insta); document.getElementById('d-insta').textContent = c.insta;
+    show('d-notes-row', c.notes); document.getElementById('d-notes').textContent = c.notes;
+    document.getElementById('d-call-btn').href = c.phone ? `tel:${c.phone}` : '#';
+    document.getElementById('d-sms-btn').href = c.phone ? `sms:${c.phone}` : '#';
+    document.getElementById('detail-overlay').classList.add('open');
+  };
+  window.closeDetailModal = () => document.getElementById('detail-overlay').classList.remove('open');
+
+  window.deleteContact = async () => {
+    if (!detailId || !confirm('Supprimer ce contact ?')) return;
+    await remove(ref(db, 'contacts/' + detailId));
+    closeDetailModal();
+  };
+
+  window.editContact = () => {
+    if (!detailId) return;
+    const c = contacts[detailId];
+    editingId = detailId;
+    document.getElementById('modal-title').textContent = 'Modifier le contact';
+    document.getElementById('c-first').value = c.first || '';
+    document.getElementById('c-last').value = c.last || '';
+    document.getElementById('c-cat').value = c.category;
+    document.getElementById('c-company').value = c.company || '';
+    document.getElementById('c-phone').value = c.phone || '';
+    document.getElementById('c-email').value = c.email || '';
+    document.getElementById('c-insta').value = c.insta || '';
+    document.getElementById('c-notes').value = c.notes || '';
+    closeDetailModal();
+    document.getElementById('add-overlay').classList.add('open');
+  };
+</script>
+</body>
+</html>

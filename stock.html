@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="data:image/png;base64,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">
+  <link rel="apple-touch-icon" href="data:image/png;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCABkAGQDASIAAhEBAxEB/8QAGwABAAIDAQEAAAAAAAAAAAAAAAYHBAUIAwL/xAAyEAABAwQBAgUDAgUFAAAAAAABAAIDBAUGEQcSIQgTMUFRFCJhUnEVFiMygjNCQ3OB/8QAGAEBAQEBAQAAAAAAAAAAAAAAAAECAwT/xAAfEQADAQADAQEAAwAAAAAAAAAAAQIREiExA0EiUcH/2gAMAwEAAhEDEQA/AOZURF5TyBERAEREAREQBERAEREAREQBERAERSTC8PuWUMr6uGeloLXbYxLcLjWPLYKZpOm70CXOcewa0EkpuBJvwjaKfWXAbNkF0jtVg5CsUtdK4MhjrYKilbMfYMe6MjZ9gdE+yzuROGMgwG1xXDJr3j9M2d5ZTxsmmkkmcBshobF8e50O4791OS8NcKzSs0Wxx+2xXa4x0Ut2oLYZHBrZawyCPZOgCWMdr9yAB8qz8l8P2TYtbXXXJ8lxa029jukzS1Uri4/paxsRc93r2A2jpIKKpain0U7tnH9LkDpKTEcst16urGOkbbjTzU807WjbvKL29LzoE9OwdA9lBntcx7mPaWuadEEaIPwqnpGmj5REQgREQBERAF0J4cGY3mHFmUcVXC5Mtl2ulU2qpZna3L0iMtDd/wB3S6PZbvZDjr3I57W+OM3pljtV+oqeepp6+SSOJ1OxznRzRu7sOu4d0lrh+D+CpS1G/nXF7hIuROH88wZ0k9ztD6m3xkkV9FuWHQ93Ed2f5AK2a6qm5f8ACzJUzyGoyPEpeuVx7vljY3u4+/eIk793RlYPGfIXOWJMi/j2JZNf7A0DzW1dumMscfu5kpbv0/Vse3b1U8iqMawbnCwV1mjjpce5Ct3TPS9AbG2Y6MUgb6Dq6w3p9AXuK5U3+noiZ/PGc+eHXETmXK9poZY+uipH/XVnx5cZB0fw53S3/Jb7xDZJeeTOXamz2Gnq7nSWx7qOhpqWN0nUWnUkgDflwP3fpDVarsdi4C47zu/xyNbcbpWmisrg7bmxHfld/wBQ6nuPz5YXvLXVHEWBWbGuOMQqL7lV0oGVtbVRUj5+kOH+o/oGyOrqDW7AAad/m8teoi+eTxfX6/8ACPcHcO1uBXSLkfka4UljpbWx0sVM6YOf1OaW7kI7Ds7s0EknQ7eh58zq50t6za+XihiMNLXXGephjI0WsfI5zRr9ipHyTJyvfK5lTnFFkr3Od/RZV0ckUTSe39NnSGj112Ci+WWOqxu/1FlrnMNVTNjE7W/8cjmNc5h/LSS0/lpW5Xes5W1mSujVIiLRyCIiAIiIAr74e5XtPGXFbLTU01Xcaq91lTUyNpKkRPo4uhkTXAkH7y6NxHp6A/G6EVkcI8TXXkuvqJGVTLbZ6Ij6utkb1aJ79DG9tu137kADufYHNpZ2dPm6Vfx9FFXYP/NUd5pcl5DnrHTh0cTKSEVb3k9h9QJySSe3UI9/hXD4g8aueZ8q8a0bfqaCvuVEPqacS9RogxwkkcDofc0F3ftssCx48q4M4ce4YpQPyzI4gW/WF4eGu/7SOhv7xtPwVn8V5Tcqu0Zjz5mIjMtPSmgtEABEcbQQehm/Z0jmN3676/lc236d5lZxbNl4wrfHlPHLb1Za41TcauToLhDGdtaXBrXFw/Uwln7B7lpvEJNb6PjzCrJe6vJ6e0/wuHyrlbiyeOeURtBZNE5zA49IDmnr93duyi/hSyll3ybI8HyaZ1TS5ZBLI8vd3fUacZNfBcwuO/ljVl47yu/A31/FHKFibkFmtsrqRkvltdI2Jp+zbHdnt6ektOwQNevbUxrr+iu5pcn1ppeJuV8T4ubOLU/LMh+oAa+GrdHSU0Y2PubE18v3/kkduyrjl6alquTL9cKGq+qpK+rdXQS72SycCVoPwQHgEexGldN44Z495Cs9Te+HchY2rib1vtU8hLQf0/f98ZPcAu20n3A7rnGspp6Osmo6qJ8NRBI6OWN405jmnRB/IIXScb1HH6ckkn4eKIi2cQiIgCIiAK4eJ8qp5uHct4zF0prRcrpKyqoKmpmEMUx3GJYHSHszqZHodWgeogke9PIo1pqacvSfWTi67TXWODILvYMdoA4edWVl2piA336GtkJkPxrt8kK3fEDW4u7h2xYbx9k1hqrdbZg6qhbc4WzPDWnTtOcOvb3OcQO+yDr45kRRzr00rUppL0kXHDrhBmlquFtraCiqKKrinbNWVkdPG3pcCdl5Gxr1A2SPYq/PEjYMFz+4RZHiOb4wb82MRVFLLcoom1bR/aWvcQ0PA7dyARruNd+YURzr0TeS5aLk4XtVx48zqkzHJ7lQWe1UMcvnNbcIZZqsFjgIo4o3lz9uLTvXSNb32VY5jeDkOW3e/OiEJuNdNVeWP9nmPLtf+bWpRVLvTLrrEERFTIREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREB//Z">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="La Seconde">
+  <meta name="theme-color" content="#162715">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stock — La Seconde</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --green: #162715;
+      --green-mid: #2e4a2c;
+      --green-light: rgba(22,39,21,0.06);
+      --green-border: rgba(22,39,21,0.15);
+      --green-border-strong: rgba(22,39,21,0.25);
+      --text: #162715;
+      --muted: rgba(22,39,21,0.48);
+      --bg: #ffffff;
+    }
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      max-width: 420px;
+      margin: 0 auto;
+      min-height: 100dvh;
+      padding-bottom: 6rem;
+    }
+
+    /* Header */
+    .header {
+      position: sticky; top: 0; background: var(--bg);
+      z-index: 5; border-bottom: 0.5px solid var(--green-border-strong);
+      padding: 1rem 1rem 0.75rem;
+    }
+    .header-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.75rem; }
+    .logo { font-family: 'DM Serif Display', serif; font-size: 20px; color: var(--green); }
+    .user-pill {
+      display: flex; align-items: center; gap: 6px;
+      font-size: 12px; color: var(--muted); cursor: pointer;
+      border: 0.5px solid var(--green-border); border-radius: 99px; padding: 4px 10px 4px 4px;
+    }
+    .user-pill:hover { background: var(--green-light); }
+    .user-avatar {
+      width: 22px; height: 22px; border-radius: 50%;
+      background: var(--green); color: #fff;
+      font-size: 9px; font-weight: 500;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .nav-links { display: flex; gap: 6px; margin-bottom: 0.75rem; flex-wrap: wrap; }
+    .nav-link {
+      font-size: 12px; color: var(--muted);
+      border: 0.5px solid var(--green-border); border-radius: 99px;
+      padding: 4px 12px; text-decoration: none;
+    }
+    .nav-link.active { background: var(--green); color: #fff; border-color: var(--green); }
+
+    /* Stats bar */
+    .stats-bar {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px;
+      padding: 0.75rem 1rem;
+      border-bottom: 0.5px solid var(--green-border);
+    }
+    .stat {
+      background: var(--green-light); border-radius: 8px;
+      padding: 0.6rem 0.75rem;
+    }
+    .stat-label { font-size: 10px; color: var(--muted); letter-spacing: 0.06em; text-transform: uppercase; }
+    .stat-value { font-size: 16px; font-weight: 500; color: var(--text); margin-top: 2px; }
+
+    /* Filter tabs */
+    .filter-tabs {
+      display: flex; gap: 4px; padding: 0.75rem 1rem 0;
+      overflow-x: auto; -webkit-overflow-scrolling: touch;
+    }
+    .filter-tabs::-webkit-scrollbar { display: none; }
+    .ftab {
+      flex-shrink: 0; font-size: 12px; color: var(--muted);
+      border: 0.5px solid var(--green-border); border-radius: 99px;
+      padding: 4px 12px; cursor: pointer; background: none;
+      font-family: 'DM Sans', sans-serif; transition: all 0.12s;
+    }
+    .ftab.active { background: var(--green); color: #fff; border-color: var(--green); }
+
+    /* Search */
+    .search-wrap { padding: 0.75rem 1rem 0; }
+    .search-input {
+      width: 100%; padding: 9px 11px 9px 34px;
+      font-size: 13px; font-family: 'DM Sans', sans-serif;
+      border: 0.5px solid var(--green-border-strong); border-radius: 8px;
+      background: var(--bg); color: var(--text); outline: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='rgba(22,39,21,0.4)' stroke-width='2'%3E%3Ccircle cx='11' cy='11' r='8'/%3E%3Cpath d='m21 21-4.35-4.35'/%3E%3C/svg%3E");
+      background-repeat: no-repeat; background-position: 10px center;
+    }
+    .search-input:focus { border-color: var(--green); }
+
+    /* Stock list */
+    .stock-list { padding: 0.75rem 1rem; display: flex; flex-direction: column; gap: 8px; }
+    .watch-card {
+      border: 0.5px solid var(--green-border); border-radius: 12px;
+      overflow: hidden; cursor: pointer;
+      transition: border-color 0.12s; display: flex;
+    }
+    .watch-card:hover { border-color: var(--green-border-strong); }
+    .watch-img {
+      width: 80px; flex-shrink: 0;
+      background: var(--green-light);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--muted);
+    }
+    .watch-img img { width: 80px; height: 100%; object-fit: cover; display: block; }
+    .watch-img i { font-size: 24px; }
+    .watch-body { flex: 1; padding: 0.75rem; min-width: 0; }
+    .watch-brand { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+    .watch-model { font-size: 14px; font-weight: 500; color: var(--text); margin-top: 1px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .watch-prices { display: flex; gap: 10px; margin-top: 6px; align-items: baseline; }
+    .price-sell { font-size: 14px; font-weight: 500; color: var(--green); }
+    .price-buy { font-size: 11px; color: var(--muted); }
+    .watch-status { margin-top: 6px; }
+    .status-pill {
+      font-size: 10px; padding: 2px 8px; border-radius: 99px; font-weight: 500;
+      display: inline-block;
+    }
+    .s-dispo { background: rgba(74,122,71,0.12); color: #2e4a2c; }
+    .s-reserve { background: rgba(122,92,46,0.12); color: #7a5c2e; }
+    .s-vendu { background: rgba(22,39,21,0.08); color: var(--muted); }
+    .watch-margin {
+      font-size: 10px; color: var(--muted); margin-top: 3px;
+    }
+    .margin-pos { color: #2e4a2c; }
+
+    .empty { text-align: center; color: var(--muted); font-size: 13px; padding: 3rem 0; }
+    .loading { text-align: center; color: var(--muted); font-size: 13px; padding: 3rem 0; }
+
+    /* FAB */
+    .fab {
+      position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%);
+      padding: 0 22px; height: 44px; background: var(--green); color: #fff;
+      border: none; border-radius: 99px; font-family: 'DM Sans', sans-serif;
+      font-size: 13px; font-weight: 500; cursor: pointer;
+      display: flex; align-items: center; gap: 7px; white-space: nowrap;
+    }
+    .fab:hover { background: var(--green-mid); }
+
+    /* Modal */
+    .overlay {
+      display: none; position: fixed; inset: 0;
+      background: rgba(22,39,21,0.4); z-index: 20;
+      align-items: flex-end; justify-content: center;
+    }
+    .overlay.open { display: flex; }
+    .modal {
+      background: var(--bg); border-radius: 20px 20px 0 0;
+      padding: 1.25rem 1.25rem 2.5rem; width: 100%; max-width: 420px;
+      border-top: 0.5px solid var(--green-border-strong);
+      max-height: 92dvh; overflow-y: auto;
+    }
+    .modal-handle { width: 36px; height: 4px; background: var(--green-border-strong); border-radius: 99px; margin: 0 auto 1rem; }
+    .modal-title { font-size: 15px; font-weight: 500; color: var(--text); margin-bottom: 1.1rem; }
+    .form-row { margin-bottom: 0.85rem; }
+    .form-label { display: block; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 5px; }
+    .form-input {
+      width: 100%; padding: 9px 11px; font-size: 13px;
+      font-family: 'DM Sans', sans-serif;
+      border: 0.5px solid var(--green-border-strong); border-radius: 8px;
+      background: var(--bg); color: var(--text); outline: none;
+    }
+    .form-input:focus { border-color: var(--green); }
+    select.form-input { cursor: pointer; }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+
+    /* Upload */
+    .upload-zone {
+      border: 1px dashed var(--green-border-strong); border-radius: 8px;
+      padding: 1.25rem; text-align: center; cursor: pointer;
+      transition: background 0.12s; position: relative;
+    }
+    .upload-zone:hover { background: var(--green-light); }
+    .upload-zone input { position: absolute; inset: 0; opacity: 0; cursor: pointer; width: 100%; height: 100%; }
+    .upload-zone i { font-size: 22px; color: var(--muted); display: block; margin-bottom: 4px; }
+    .upload-zone p { font-size: 12px; color: var(--muted); }
+    .upload-preview { position: relative; border-radius: 8px; overflow: hidden; height: 160px; }
+    .upload-preview img { width: 100%; height: 100%; object-fit: cover; }
+    .remove-img {
+      position: absolute; top: 6px; right: 6px;
+      background: rgba(22,39,21,0.7); color: #fff; border: none;
+      border-radius: 50%; width: 24px; height: 24px; font-size: 12px;
+      cursor: pointer; display: flex; align-items: center; justify-content: center;
+    }
+
+    .modal-actions { display: flex; gap: 8px; margin-top: 1.1rem; }
+    .btn-cancel {
+      flex: 1; padding: 10px; border: 0.5px solid var(--green-border-strong);
+      border-radius: 8px; background: none; cursor: pointer;
+      font-size: 13px; font-family: 'DM Sans', sans-serif; color: var(--muted);
+    }
+    .btn-save {
+      flex: 2; padding: 10px; border: none; border-radius: 8px;
+      background: var(--green); color: #fff; cursor: pointer;
+      font-size: 13px; font-weight: 500; font-family: 'DM Sans', sans-serif;
+    }
+
+    /* Detail modal */
+    .detail-img-wrap { width: 100%; height: 200px; border-radius: 10px; overflow: hidden; background: var(--green-light); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; }
+    .detail-img-wrap img { width: 100%; height: 100%; object-fit: cover; }
+    .detail-img-wrap i { font-size: 48px; color: var(--green-border-strong); }
+    .detail-brand { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+    .detail-model { font-size: 20px; font-weight: 500; color: var(--text); margin: 4px 0 1rem; }
+    .detail-prices {
+      display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin-bottom: 1rem;
+    }
+    .price-box { background: var(--green-light); border-radius: 8px; padding: 0.6rem 0.75rem; }
+    .price-box-label { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+    .price-box-value { font-size: 15px; font-weight: 500; color: var(--text); margin-top: 2px; }
+    .price-box-value.green { color: #2e4a2c; }
+    .detail-row { display: flex; align-items: center; gap: 8px; margin-bottom: 0.5rem; font-size: 13px; color: var(--text); }
+    .detail-row i { font-size: 15px; color: var(--muted); }
+    .del-btn {
+      margin-top: 1rem; width: 100%; padding: 10px;
+      border: 0.5px solid rgba(192,57,43,0.3); border-radius: 8px;
+      background: none; color: #c0392b; font-size: 13px;
+      font-family: 'DM Sans', sans-serif; cursor: pointer;
+    }
+    .del-btn:hover { background: rgba(192,57,43,0.05); }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-row">
+    <img src="data:image/png;base64,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" alt="La Seconde" style="height:36px;width:auto;">
+    <div class="user-pill" id="user-pill" onclick="handleLogout()">
+      <div class="user-avatar" id="user-initials">?</div>
+      <span id="user-name">…</span>
+      <i class="ti ti-logout" style="font-size:13px"></i>
+    </div>
+  </div>
+  <div class="nav-links">
+    <a class="nav-link" href="app.html">Calendrier</a>
+    <a class="nav-link" href="instagram.html">Instagram</a>
+    <a class="nav-link active" href="stock.html">Stock</a>
+    <a class="nav-link" href="stats.html">Stats</a>
+    <a class="nav-link" href="contacts.html">Contacts</a>
+  </div>
+</div>
+
+<div class="stats-bar" id="stats-bar">
+  <div class="stat"><div class="stat-label">En stock</div><div class="stat-value" id="stat-total">—</div></div>
+  <div class="stat"><div class="stat-label">Investi</div><div class="stat-value" id="stat-investi">—</div></div>
+  <div class="stat"><div class="stat-label">Valeur vente</div><div class="stat-value" id="stat-valeur">—</div></div>
+</div>
+
+<div class="filter-tabs">
+  <button class="ftab active" data-f="all" onclick="setFilter(this,'all')">Tout</button>
+  <button class="ftab" data-f="Disponible" onclick="setFilter(this,'Disponible')">Disponible</button>
+  <button class="ftab" data-f="Réservé" onclick="setFilter(this,'Réservé')">Réservé</button>
+  <button class="ftab" data-f="Vendu" onclick="setFilter(this,'Vendu')">Vendu</button>
+</div>
+
+<div class="search-wrap">
+  <input type="text" class="search-input" id="search" placeholder="Rechercher une montre…" oninput="render()">
+</div>
+
+<div class="stock-list" id="stock-list"><div class="loading">Chargement…</div></div>
+
+<button class="fab" onclick="openAddModal()">
+  <i class="ti ti-plus"></i> Ajouter
+</button>
+
+<!-- Add modal -->
+<div class="overlay" id="add-overlay">
+  <div class="modal">
+    <div class="modal-handle"></div>
+    <p class="modal-title" id="modal-title">Nouvelle montre</p>
+
+    <div class="form-row">
+      <label class="form-label">Photo</label>
+      <div class="upload-zone" id="upload-zone">
+        <input type="file" accept="image/*" id="img-input" onchange="handleImage(this)">
+        <i class="ti ti-camera"></i>
+        <p>Appuie pour ajouter une photo</p>
+      </div>
+      <div class="upload-preview" id="upload-preview" style="display:none;">
+        <img id="preview-img" src="" alt="preview">
+        <button class="remove-img" onclick="removeImage()"><i class="ti ti-x"></i></button>
+      </div>
+    </div>
+
+    <div class="form-row two-col">
+      <div>
+        <label class="form-label">Marque</label>
+        <input type="text" class="form-input" id="w-brand" placeholder="Rolex">
+      </div>
+      <div>
+        <label class="form-label">Modèle</label>
+        <input type="text" class="form-input" id="w-model" placeholder="Submariner">
+      </div>
+    </div>
+
+    <div class="form-row">
+      <label class="form-label">Référence (optionnel)</label>
+      <input type="text" class="form-input" id="w-ref" placeholder="Ex : 16610">
+    </div>
+
+    <div class="form-row two-col">
+      <div>
+        <label class="form-label">Prix d'achat (€)</label>
+        <input type="number" class="form-input" id="w-buy" placeholder="0">
+      </div>
+      <div>
+        <label class="form-label">Prix de vente (€)</label>
+        <input type="number" class="form-input" id="w-sell" placeholder="0">
+      </div>
+    </div>
+
+    <div class="form-row">
+      <label class="form-label">Statut</label>
+      <select class="form-input" id="w-status">
+        <option value="Disponible">Disponible</option>
+        <option value="Réservé">Réservé</option>
+        <option value="Vendu">Vendu</option>
+      </select>
+    </div>
+
+    <div class="form-row">
+      <label class="form-label">Notes (optionnel)</label>
+      <input type="text" class="form-input" id="w-notes" placeholder="Ex : boîte et papiers, bracelet neuf…">
+    </div>
+
+    <div class="modal-actions">
+      <button class="btn-cancel" onclick="closeAddModal()">Annuler</button>
+      <button class="btn-save" onclick="saveWatch()">Enregistrer</button>
+    </div>
+  </div>
+</div>
+
+<!-- Detail modal -->
+<div class="overlay" id="detail-overlay">
+  <div class="modal">
+    <div class="modal-handle"></div>
+    <div class="detail-img-wrap" id="d-img"></div>
+    <div class="detail-brand" id="d-brand"></div>
+    <div class="detail-model" id="d-model"></div>
+    <div class="detail-prices">
+      <div class="price-box">
+        <div class="price-box-label">Achat</div>
+        <div class="price-box-value" id="d-buy"></div>
+      </div>
+      <div class="price-box">
+        <div class="price-box-label">Vente</div>
+        <div class="price-box-value" id="d-sell"></div>
+      </div>
+      <div class="price-box">
+        <div class="price-box-label">Marge</div>
+        <div class="price-box-value green" id="d-margin"></div>
+      </div>
+    </div>
+    <div class="detail-row" id="d-ref-row"><i class="ti ti-hash"></i><span id="d-ref"></span></div>
+    <div class="detail-row"><i class="ti ti-tag"></i><span id="d-status"></span></div>
+    <div class="detail-row" id="d-notes-row"><i class="ti ti-note"></i><span id="d-notes"></span></div>
+    <button class="del-btn" onclick="deleteWatch()"><i class="ti ti-trash" style="font-size:13px;vertical-align:-1px;margin-right:4px"></i>Supprimer du stock</button>
+    <div class="modal-actions" style="margin-top:0.75rem;">
+      <button class="btn-cancel" onclick="closeDetailModal()">Fermer</button>
+      <button class="btn-save" onclick="editWatch()">Modifier</button>
+    </div>
+  </div>
+</div>
+
+<script src="firebase-config.js"></script>
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+  import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
+  import { getDatabase, ref, onValue, push, remove, set } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js";
+  import { getStorage, ref as sRef, uploadString, getDownloadURL, deleteObject } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-storage.js";
+
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+  const db = getDatabase(app);
+  const storage = getStorage(app);
+
+  onAuthStateChanged(auth, (user) => {
+    if (!user) { window.location.href = "index.html"; return; }
+    const name = user.displayName || user.email.split("@")[0];
+    document.getElementById("user-name").textContent = name;
+    document.getElementById("user-initials").textContent = name.slice(0,2).toUpperCase();
+    subscribeStock();
+  });
+
+  window.handleLogout = async () => { await signOut(auth); window.location.href = "index.html"; };
+
+  const STATUS_CLS = { 'Disponible': 's-dispo', 'Réservé': 's-reserve', 'Vendu': 's-vendu' };
+
+  let stock = {};
+  let activeFilter = 'all';
+  let imageBase64 = null;
+  let editingId = null;
+  let detailId = null;
+
+  function subscribeStock() {
+    onValue(ref(db, 'stock'), (snap) => { stock = snap.val() || {}; render(); });
+  }
+
+  function fmt(n) {
+    return Number(n).toLocaleString('fr-FR') + ' €';
+  }
+
+  window.render = function() {
+    const q = document.getElementById('search').value.toLowerCase();
+    const entries = Object.entries(stock).filter(([,w]) => {
+      const matchFilter = activeFilter === 'all' || w.status === activeFilter;
+      const matchSearch = !q || (w.brand+w.model+w.ref).toLowerCase().includes(q);
+      return matchFilter && matchSearch;
+    });
+
+    // Stats — always on all disponible+réservé items
+    const active = Object.values(stock).filter(w => w.status !== 'Vendu');
+    const totalInvesti = active.reduce((s,w) => s + (Number(w.buy)||0), 0);
+    const totalValeur = active.reduce((s,w) => s + (Number(w.sell)||0), 0);
+    document.getElementById('stat-total').textContent = active.length;
+    document.getElementById('stat-investi').textContent = totalInvesti ? fmt(totalInvesti) : '—';
+    document.getElementById('stat-valeur').textContent = totalValeur ? fmt(totalValeur) : '—';
+
+    const list = document.getElementById('stock-list');
+    list.innerHTML = '';
+    if (!entries.length) { list.innerHTML = '<div class="empty">Aucune montre trouvée</div>'; return; }
+
+    entries.sort((a,b) => (a[1].brand+a[1].model).localeCompare(b[1].brand+b[1].model))
+    .forEach(([id, w]) => {
+      const margin = (Number(w.sell)||0) - (Number(w.buy)||0);
+      const card = document.createElement('div');
+      card.className = 'watch-card';
+      card.onclick = () => openDetail(id);
+      card.innerHTML = `
+        <div class="watch-img">
+          ${w.imageUrl ? `<img src="${w.imageUrl}" alt="${w.brand} ${w.model}">` : `<i class="ti ti-watch" aria-hidden="true"></i>`}
+        </div>
+        <div class="watch-body">
+          <div class="watch-brand">${w.brand}</div>
+          <div class="watch-model">${w.model}${w.ref ? ' · ' + w.ref : ''}</div>
+          <div class="watch-prices">
+            <span class="price-sell">${w.sell ? fmt(w.sell) : '—'}</span>
+            <span class="price-buy">acheté ${w.buy ? fmt(w.buy) : '—'}</span>
+          </div>
+          <div class="watch-status"><span class="status-pill ${STATUS_CLS[w.status]||'s-dispo'}">${w.status}</span></div>
+          ${margin > 0 ? `<div class="watch-margin margin-pos">Marge : +${fmt(margin)}</div>` : ''}
+        </div>`;
+      list.appendChild(card);
+    });
+  };
+
+  window.setFilter = (el, key) => {
+    activeFilter = key;
+    document.querySelectorAll('.ftab').forEach(t => t.classList.remove('active'));
+    el.classList.add('active');
+    render();
+  };
+
+  // Image
+  window.handleImage = (input) => {
+    const file = input.files[0]; if (!file) return;
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      imageBase64 = e.target.result;
+      document.getElementById('upload-zone').style.display = 'none';
+      document.getElementById('upload-preview').style.display = 'block';
+      document.getElementById('preview-img').src = imageBase64;
+    };
+    reader.readAsDataURL(file);
+  };
+  window.removeImage = () => {
+    imageBase64 = null;
+    document.getElementById('img-input').value = '';
+    document.getElementById('upload-zone').style.display = 'block';
+    document.getElementById('upload-preview').style.display = 'none';
+  };
+
+  // Add modal
+  window.openAddModal = () => {
+    editingId = null; imageBase64 = null;
+    document.getElementById('modal-title').textContent = 'Nouvelle montre';
+    ['w-brand','w-model','w-ref','w-buy','w-sell','w-notes'].forEach(id => document.getElementById(id).value = '');
+    document.getElementById('w-status').value = 'Disponible';
+    document.getElementById('upload-zone').style.display = 'block';
+    document.getElementById('upload-preview').style.display = 'none';
+    document.getElementById('img-input').value = '';
+    document.getElementById('add-overlay').classList.add('open');
+  };
+  window.closeAddModal = () => document.getElementById('add-overlay').classList.remove('open');
+
+  window.saveWatch = async () => {
+    const brand = document.getElementById('w-brand').value.trim();
+    const model = document.getElementById('w-model').value.trim();
+    if (!brand || !model) { alert('Marque et modèle requis.'); return; }
+    let imageUrl = editingId ? (stock[editingId]?.imageUrl || null) : null;
+    if (imageBase64) {
+      const imgRef = sRef(storage, `stock/${Date.now()}.jpg`);
+      await uploadString(imgRef, imageBase64, 'data_url');
+      imageUrl = await getDownloadURL(imgRef);
+    }
+    const payload = {
+      brand, model,
+      ref: document.getElementById('w-ref').value.trim(),
+      buy: document.getElementById('w-buy').value,
+      sell: document.getElementById('w-sell').value,
+      status: document.getElementById('w-status').value,
+      notes: document.getElementById('w-notes').value.trim(),
+      imageUrl
+    };
+    if (editingId) await set(ref(db, 'stock/' + editingId), payload);
+    else await push(ref(db, 'stock'), payload);
+    closeAddModal();
+  };
+
+  // Detail modal
+  window.openDetail = (id) => {
+    detailId = id;
+    const w = stock[id]; if (!w) return;
+    document.getElementById('d-img').innerHTML = w.imageUrl
+      ? `<img src="${w.imageUrl}" alt="${w.brand} ${w.model}">`
+      : `<i class="ti ti-watch" style="font-size:48px;color:var(--green-border-strong)"></i>`;
+    document.getElementById('d-brand').textContent = w.brand;
+    document.getElementById('d-model').textContent = w.model;
+    document.getElementById('d-buy').textContent = w.buy ? fmt(w.buy) : '—';
+    document.getElementById('d-sell').textContent = w.sell ? fmt(w.sell) : '—';
+    const margin = (Number(w.sell)||0) - (Number(w.buy)||0);
+    document.getElementById('d-margin').textContent = margin > 0 ? '+' + fmt(margin) : '—';
+    const refRow = document.getElementById('d-ref-row');
+    if (w.ref) { document.getElementById('d-ref').textContent = w.ref; refRow.style.display = 'flex'; }
+    else refRow.style.display = 'none';
+    document.getElementById('d-status').textContent = w.status;
+    const notesRow = document.getElementById('d-notes-row');
+    if (w.notes) { document.getElementById('d-notes').textContent = w.notes; notesRow.style.display = 'flex'; }
+    else notesRow.style.display = 'none';
+    document.getElementById('detail-overlay').classList.add('open');
+  };
+  window.closeDetailModal = () => document.getElementById('detail-overlay').classList.remove('open');
+
+  window.deleteWatch = async () => {
+    if (!detailId) return;
+    if (!confirm('Supprimer cette montre du stock ?')) return;
+    const w = stock[detailId];
+    if (w?.imageUrl) { try { await deleteObject(sRef(storage, w.imageUrl)); } catch(e) {} }
+    await remove(ref(db, 'stock/' + detailId));
+    closeDetailModal();
+  };
+
+  window.editWatch = () => {
+    if (!detailId) return;
+    const w = stock[detailId];
+    editingId = detailId; imageBase64 = null;
+    document.getElementById('modal-title').textContent = 'Modifier la montre';
+    document.getElementById('w-brand').value = w.brand;
+    document.getElementById('w-model').value = w.model;
+    document.getElementById('w-ref').value = w.ref || '';
+    document.getElementById('w-buy').value = w.buy || '';
+    document.getElementById('w-sell').value = w.sell || '';
+    document.getElementById('w-status').value = w.status;
+    document.getElementById('w-notes').value = w.notes || '';
+    if (w.imageUrl) {
+      document.getElementById('upload-zone').style.display = 'none';
+      document.getElementById('upload-preview').style.display = 'block';
+      document.getElementById('preview-img').src = w.imageUrl;
+    } else {
+      document.getElementById('upload-zone').style.display = 'block';
+      document.getElementById('upload-preview').style.display = 'none';
+    }
+    closeDetailModal();
+    document.getElementById('add-overlay').classList.add('open');
+  };
+</script>
+</body>
+</html>
