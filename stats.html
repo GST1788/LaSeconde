@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <link rel="manifest" href="manifest.json">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stats — La Seconde</title>
+  <link rel="icon" type="image/png" href="data:image/png;base64,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">
+  <link rel="apple-touch-icon" href="data:image/png;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCABkAGQDASIAAhEBAxEB/8QAGwABAAIDAQEAAAAAAAAAAAAAAAYHBAUIAwL/xAAyEAABAwQBAgUDAgUFAAAAAAABAAIDBAUGEQcSIQgTMUFRFCJhUnEVFiMygjNCQ3OB/8QAGAEBAQEBAQAAAAAAAAAAAAAAAAECAwT/xAAfEQADAQADAQEAAwAAAAAAAAAAAQIREiExA0EiUcH/2gAMAwEAAhEDEQA/AOZURF5TyBERAEREAREQBERAEREAREQBERAERSTC8PuWUMr6uGeloLXbYxLcLjWPLYKZpOm70CXOcewa0EkpuBJvwjaKfWXAbNkF0jtVg5CsUtdK4MhjrYKilbMfYMe6MjZ9gdE+yzuROGMgwG1xXDJr3j9M2d5ZTxsmmkkmcBshobF8e50O4791OS8NcKzSs0Wxx+2xXa4x0Ut2oLYZHBrZawyCPZOgCWMdr9yAB8qz8l8P2TYtbXXXJ8lxa029jukzS1Uri4/paxsRc93r2A2jpIKKpain0U7tnH9LkDpKTEcst16urGOkbbjTzU807WjbvKL29LzoE9OwdA9lBntcx7mPaWuadEEaIPwqnpGmj5REQgREQBERAF0J4cGY3mHFmUcVXC5Mtl2ulU2qpZna3L0iMtDd/wB3S6PZbvZDjr3I57W+OM3pljtV+oqeepp6+SSOJ1OxznRzRu7sOu4d0lrh+D+CpS1G/nXF7hIuROH88wZ0k9ztD6m3xkkV9FuWHQ93Ed2f5AK2a6qm5f8ACzJUzyGoyPEpeuVx7vljY3u4+/eIk793RlYPGfIXOWJMi/j2JZNf7A0DzW1dumMscfu5kpbv0/Vse3b1U8iqMawbnCwV1mjjpce5Ct3TPS9AbG2Y6MUgb6Dq6w3p9AXuK5U3+noiZ/PGc+eHXETmXK9poZY+uipH/XVnx5cZB0fw53S3/Jb7xDZJeeTOXamz2Gnq7nSWx7qOhpqWN0nUWnUkgDflwP3fpDVarsdi4C47zu/xyNbcbpWmisrg7bmxHfld/wBQ6nuPz5YXvLXVHEWBWbGuOMQqL7lV0oGVtbVRUj5+kOH+o/oGyOrqDW7AAad/m8teoi+eTxfX6/8ACPcHcO1uBXSLkfka4UljpbWx0sVM6YOf1OaW7kI7Ds7s0EknQ7eh58zq50t6za+XihiMNLXXGephjI0WsfI5zRr9ipHyTJyvfK5lTnFFkr3Od/RZV0ckUTSe39NnSGj112Ci+WWOqxu/1FlrnMNVTNjE7W/8cjmNc5h/LSS0/lpW5Xes5W1mSujVIiLRyCIiAIiIAr74e5XtPGXFbLTU01Xcaq91lTUyNpKkRPo4uhkTXAkH7y6NxHp6A/G6EVkcI8TXXkuvqJGVTLbZ6Ij6utkb1aJ79DG9tu137kADufYHNpZ2dPm6Vfx9FFXYP/NUd5pcl5DnrHTh0cTKSEVb3k9h9QJySSe3UI9/hXD4g8aueZ8q8a0bfqaCvuVEPqacS9RogxwkkcDofc0F3ftssCx48q4M4ce4YpQPyzI4gW/WF4eGu/7SOhv7xtPwVn8V5Tcqu0Zjz5mIjMtPSmgtEABEcbQQehm/Z0jmN3676/lc236d5lZxbNl4wrfHlPHLb1Za41TcauToLhDGdtaXBrXFw/Uwln7B7lpvEJNb6PjzCrJe6vJ6e0/wuHyrlbiyeOeURtBZNE5zA49IDmnr93duyi/hSyll3ybI8HyaZ1TS5ZBLI8vd3fUacZNfBcwuO/ljVl47yu/A31/FHKFibkFmtsrqRkvltdI2Jp+zbHdnt6ektOwQNevbUxrr+iu5pcn1ppeJuV8T4ubOLU/LMh+oAa+GrdHSU0Y2PubE18v3/kkduyrjl6alquTL9cKGq+qpK+rdXQS72SycCVoPwQHgEexGldN44Z495Cs9Te+HchY2rib1vtU8hLQf0/f98ZPcAu20n3A7rnGspp6Osmo6qJ8NRBI6OWN405jmnRB/IIXScb1HH6ckkn4eKIi2cQiIgCIiAK4eJ8qp5uHct4zF0prRcrpKyqoKmpmEMUx3GJYHSHszqZHodWgeogke9PIo1pqacvSfWTi67TXWODILvYMdoA4edWVl2piA336GtkJkPxrt8kK3fEDW4u7h2xYbx9k1hqrdbZg6qhbc4WzPDWnTtOcOvb3OcQO+yDr45kRRzr00rUppL0kXHDrhBmlquFtraCiqKKrinbNWVkdPG3pcCdl5Gxr1A2SPYq/PEjYMFz+4RZHiOb4wb82MRVFLLcoom1bR/aWvcQ0PA7dyARruNd+YURzr0TeS5aLk4XtVx48zqkzHJ7lQWe1UMcvnNbcIZZqsFjgIo4o3lz9uLTvXSNb32VY5jeDkOW3e/OiEJuNdNVeWP9nmPLtf+bWpRVLvTLrrEERFTIREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREB//Z">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="La Seconde">
+  <meta name="theme-color" content="#162715">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css">
+  <style>
+    .page-content { padding: 0 1.1rem 3rem; }
+    .page-title { font-family: "DM Serif Display", serif; font-size: 24px; color: var(--text); padding: 1.25rem 0 1rem; }
+    
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --green: #162715; --green-mid: #2e4a2c; --green-accent: #4a7a47;
+      --green-light: rgba(22,39,21,0.06); --green-border: rgba(22,39,21,0.15);
+      --green-border-strong: rgba(22,39,21,0.25);
+      --text: #162715; --muted: rgba(22,39,21,0.48); --bg: #ffffff;
+    }
+    body { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--text); max-width: 420px; margin: 0 auto; min-height: 100dvh; padding-bottom: 6rem; }
+    .header { position: sticky; top: 0; background: var(--bg); z-index: 5; border-bottom: 0.5px solid var(--green-border-strong); padding: 1rem 1rem 0.75rem; }
+    .header-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.75rem; }
+    .logo { font-family: 'DM Serif Display', serif; font-size: 20px; color: var(--green); }
+    .user-pill { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--muted); cursor: pointer; border: 0.5px solid var(--green-border); border-radius: 99px; padding: 4px 10px 4px 4px; }
+    .user-pill:hover { background: var(--green-light); }
+    .user-avatar { width: 22px; height: 22px; border-radius: 50%; background: var(--green); color: #fff; font-size: 9px; font-weight: 500; display: flex; align-items: center; justify-content: center; }
+    .nav-links { display: flex; gap: 6px; flex-wrap: wrap; }
+    .nav-link { font-size: 12px; color: var(--muted); border: 0.5px solid var(--green-border); border-radius: 99px; padding: 4px 12px; text-decoration: none; }
+    .nav-link.active { background: var(--green); color: #fff; border-color: var(--green); }
+    .section { padding: 1rem 1rem 0; }
+    .section-title { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.75rem; }
+    .year-nav { display: flex; align-items: center; justify-content: space-between; padding: 0.75rem 1rem 0; }
+    .year-label { font-size: 17px; font-weight: 500; color: var(--text); }
+    .nav-btn { background: none; border: 0.5px solid var(--green-border-strong); border-radius: 6px; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; cursor: pointer; color: var(--text); font-size: 14px; }
+    .nav-btn:hover { background: var(--green-light); }
+
+    /* KPI cards */
+    .kpi-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding: 0.75rem 1rem 0; }
+    .kpi-card { background: var(--green-light); border-radius: 10px; padding: 0.9rem 1rem; }
+    .kpi-label { font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+    .kpi-value { font-size: 22px; font-weight: 500; color: var(--text); margin-top: 4px; }
+    .kpi-sub { font-size: 11px; color: var(--muted); margin-top: 2px; }
+    .kpi-card.wide { grid-column: 1 / -1; }
+
+    /* Chart */
+    .chart-wrap { padding: 1rem 1rem 0; }
+    .chart-box { border: 0.5px solid var(--green-border); border-radius: 10px; padding: 1rem; }
+    .chart-title { font-size: 12px; font-weight: 500; color: var(--text); margin-bottom: 0.75rem; }
+    canvas { width: 100% !important; }
+
+    /* Monthly table */
+    .month-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+    .month-table th { font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); font-weight: 400; padding: 0 0 6px; text-align: left; }
+    .month-table th:not(:first-child) { text-align: right; }
+    .month-table td { padding: 8px 0; border-top: 0.5px solid var(--green-border); color: var(--text); }
+    .month-table td:not(:first-child) { text-align: right; }
+    .month-table tr:hover td { background: var(--green-light); }
+    .month-row { cursor: pointer; }
+    .month-name { font-weight: 500; }
+    .editable { color: var(--muted); font-style: italic; }
+    .positive { color: #2e4a2c; }
+
+    /* Add entry */
+    .add-entry-btn { display: flex; align-items: center; gap: 6px; width: 100%; padding: 10px 1rem; background: none; border: none; border-top: 0.5px solid var(--green-border); font-size: 13px; color: var(--muted); cursor: pointer; font-family: 'DM Sans', sans-serif; }
+    .add-entry-btn:hover { background: var(--green-light); color: var(--text); }
+
+    .overlay { display: none; position: fixed; inset: 0; background: rgba(22,39,21,0.4); z-index: 20; align-items: flex-end; justify-content: center; }
+    .overlay.open { display: flex; }
+    .modal { background: var(--bg); border-radius: 20px 20px 0 0; padding: 1.25rem 1.25rem 2.5rem; width: 100%; max-width: 420px; border-top: 0.5px solid var(--green-border-strong); max-height: 90dvh; overflow-y: auto; }
+    .modal-handle { width: 36px; height: 4px; background: var(--green-border-strong); border-radius: 99px; margin: 0 auto 1rem; }
+    .modal-title { font-size: 15px; font-weight: 500; color: var(--text); margin-bottom: 1.1rem; }
+    .form-row { margin-bottom: 0.85rem; }
+    .form-label { display: block; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 5px; }
+    .form-input { width: 100%; padding: 9px 11px; font-size: 13px; font-family: 'DM Sans', sans-serif; border: 0.5px solid var(--green-border-strong); border-radius: 8px; background: var(--bg); color: var(--text); outline: none; }
+    .form-input:focus { border-color: var(--green); }
+    select.form-input { cursor: pointer; }
+    .modal-actions { display: flex; gap: 8px; margin-top: 1.1rem; }
+    .btn-cancel { flex: 1; padding: 10px; border: 0.5px solid var(--green-border-strong); border-radius: 8px; background: none; cursor: pointer; font-size: 13px; font-family: 'DM Sans', sans-serif; color: var(--muted); }
+    .btn-save { flex: 2; padding: 10px; border: none; border-radius: 8px; background: var(--green); color: #fff; cursor: pointer; font-size: 13px; font-weight: 500; font-family: 'DM Sans', sans-serif; }
+    .info-note { font-size: 11px; color: var(--muted); background: var(--green-light); border-radius: 8px; padding: 8px 10px; margin-bottom: 0.85rem; line-height: 1.5; }
+  
+  </style>
+</head>
+<body>
+<script src="firebase-config.js"></script>
+<script src="shell.js"></script>
+<script>injectShell("stats");</script>
+<div class="page-content">
+<div class="page-title">Stats</div>
+<span id="user-name">…</span>
+      <i class="ti ti-logout" style="font-size:13px"></i>
+    </div>
+  </div>
+  
+</div>
+
+<div class="year-nav">
+  <button class="nav-btn" onclick="changeYear(-1)"><i class="ti ti-chevron-left"></i></button>
+  <span class="year-label" id="year-label">2026</span>
+  <button class="nav-btn" onclick="changeYear(1)"><i class="ti ti-chevron-right"></i></button>
+</div>
+
+<!-- KPIs -->
+<div class="kpi-grid" id="kpi-grid">
+  <div class="kpi-card"><div class="kpi-label">Montres vendues</div><div class="kpi-value" id="kpi-sold">—</div><div class="kpi-sub">cette année</div></div>
+  <div class="kpi-card"><div class="kpi-label">Marge totale</div><div class="kpi-value" id="kpi-margin-total">—</div><div class="kpi-sub">cette année</div></div>
+  <div class="kpi-card wide"><div class="kpi-label">Marge moyenne par montre</div><div class="kpi-value" id="kpi-margin-avg">—</div><div class="kpi-sub">basé sur les montres vendues</div></div>
+</div>
+
+<!-- Chart -->
+<div class="chart-wrap">
+  <div class="chart-box">
+    <div class="chart-title">Marge mensuelle (€)</div>
+    <canvas id="margin-chart" height="180"></canvas>
+  </div>
+</div>
+
+<!-- Monthly breakdown -->
+<div class="section">
+  <div class="section-title">Détail mensuel</div>
+  <div style="border: 0.5px solid var(--green-border); border-radius: 10px; overflow: hidden;">
+    <div style="padding: 0.75rem 1rem 0;">
+      <table class="month-table">
+        <thead>
+          <tr>
+            <th>Mois</th>
+            <th>Vendues</th>
+            <th>Marge</th>
+          </tr>
+        </thead>
+        <tbody id="month-tbody"></tbody>
+      </table>
+    </div>
+    <button class="add-entry-btn" onclick="openAddModal()">
+      <i class="ti ti-plus" style="font-size:14px"></i> Saisir des données
+    </button>
+  </div>
+</div>
+
+<!-- Add modal -->
+<div class="overlay" id="add-overlay">
+  <div class="modal">
+    <div class="modal-handle"></div>
+    <p class="modal-title" id="modal-title">Saisir les données</p>
+    <div class="info-note">Les données sont partagées avec toute l'équipe en temps réel.</div>
+    <div class="form-row">
+      <label class="form-label">Mois</label>
+      <select class="form-input" id="s-month">
+        <option value="0">Janvier</option><option value="1">Février</option>
+        <option value="2">Mars</option><option value="3">Avril</option>
+        <option value="4">Mai</option><option value="5">Juin</option>
+        <option value="6">Juillet</option><option value="7">Août</option>
+        <option value="8">Septembre</option><option value="9">Octobre</option>
+        <option value="10">Novembre</option><option value="11">Décembre</option>
+      </select>
+    </div>
+    <div class="form-row">
+      <label class="form-label">Montres vendues</label>
+      <input type="number" class="form-input" id="s-sold" placeholder="0" min="0">
+    </div>
+    <div class="form-row">
+      <label class="form-label">Marge totale du mois (€)</label>
+      <input type="number" class="form-input" id="s-margin" placeholder="0">
+    </div>
+    <div class="modal-actions">
+      <button class="btn-cancel" onclick="closeAddModal()">Annuler</button>
+      <button class="btn-save" onclick="saveEntry()">Enregistrer</button>
+    </div>
+  </div>
+</div>
+
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+  import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
+  import { getDatabase, ref, onValue, set } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js";
+
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+  const db = getDatabase(app);
+
+  onAuthStateChanged(auth, (user) => {
+    if (!user) { window.location.href = "index.html"; return; }
+    const name = user.displayName || user.email.split("@")[0];
+    document.getElementById("user-name").textContent = name;
+    document.getElementById("user-initials").textContent = name.slice(0,2).toUpperCase();
+    subscribeStats();
+  });
+  window.handleLogout = async () => { await signOut(auth); window.location.href = "index.html"; };
+
+  const MONTHS_FR = ['Janv.','Févr.','Mars','Avr.','Mai','Juin','Juil.','Août','Sept.','Oct.','Nov.','Déc.'];
+  const MONTHS_FULL = ['Janvier','Février','Mars','Avril','Mai','Juin','Juillet','Août','Septembre','Octobre','Novembre','Décembre'];
+  let statsData = {}, currentYear = new Date().getFullYear();
+  let chart = null;
+
+  function subscribeStats() {
+    onValue(ref(db, 'stats'), (snap) => { statsData = snap.val() || {}; render(); });
+  }
+
+  function fmt(n) { return Number(n).toLocaleString('fr-FR') + ' €'; }
+
+  function getYear() { return statsData[currentYear] || {}; }
+
+  function render() {
+    document.getElementById('year-label').textContent = currentYear;
+    const yd = getYear();
+
+    let totalSold = 0, totalMargin = 0;
+    for (let m = 0; m < 12; m++) {
+      const md = yd[m] || {};
+      totalSold += Number(md.sold || 0);
+      totalMargin += Number(md.margin || 0);
+    }
+    document.getElementById('kpi-sold').textContent = totalSold || '—';
+    document.getElementById('kpi-margin-total').textContent = totalMargin ? fmt(totalMargin) : '—';
+    document.getElementById('kpi-margin-avg').textContent = (totalSold && totalMargin) ? fmt(Math.round(totalMargin / totalSold)) : '—';
+
+    // Chart
+    const margins = Array.from({length:12}, (_,m) => Number((yd[m]||{}).margin || 0));
+    if (chart) chart.destroy();
+    const ctx = document.getElementById('margin-chart').getContext('2d');
+    chart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: MONTHS_FR,
+        datasets: [{
+          data: margins,
+          backgroundColor: margins.map(v => v > 0 ? 'rgba(22,39,21,0.75)' : 'rgba(22,39,21,0.1)'),
+          borderRadius: 4,
+          borderSkipped: false,
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: { legend: { display: false }, tooltip: {
+          callbacks: { label: ctx => fmt(ctx.raw) }
+        }},
+        scales: {
+          x: { grid: { display: false }, ticks: { font: { size: 10, family: 'DM Sans' }, color: 'rgba(22,39,21,0.5)' } },
+          y: { grid: { color: 'rgba(22,39,21,0.07)' }, ticks: { font: { size: 10, family: 'DM Sans' }, color: 'rgba(22,39,21,0.5)', callback: v => v === 0 ? '0' : (v/1000).toFixed(0)+'k €' } }
+        }
+      }
+    });
+
+    // Table
+    const tbody = document.getElementById('month-tbody');
+    tbody.innerHTML = '';
+    for (let m = 0; m < 12; m++) {
+      const md = yd[m] || {};
+      const sold = md.sold !== undefined ? md.sold : null;
+      const margin = md.margin !== undefined ? md.margin : null;
+      const tr = document.createElement('tr');
+      tr.className = 'month-row';
+      tr.onclick = () => openAddModal(m);
+      tr.innerHTML = `
+        <td class="month-name">${MONTHS_FULL[m]}</td>
+        <td class="${sold !== null ? '' : 'editable'}">${sold !== null ? sold : '—'}</td>
+        <td class="${margin !== null ? 'positive' : 'editable'}">${margin !== null ? fmt(margin) : '—'}</td>`;
+      tbody.appendChild(tr);
+    }
+  }
+
+  window.changeYear = (dir) => { currentYear += dir; render(); };
+
+  window.openAddModal = (month) => {
+    const m = month !== undefined ? month : new Date().getMonth();
+    document.getElementById('s-month').value = m;
+    const yd = getYear();
+    const md = yd[m] || {};
+    document.getElementById('s-sold').value = md.sold || '';
+    document.getElementById('s-margin').value = md.margin || '';
+    document.getElementById('modal-title').textContent = `Données — ${MONTHS_FULL[m]} ${currentYear}`;
+    document.getElementById('add-overlay').classList.add('open');
+  };
+  window.closeAddModal = () => document.getElementById('add-overlay').classList.remove('open');
+
+  window.saveEntry = async () => {
+    const month = document.getElementById('s-month').value;
+    const sold = document.getElementById('s-sold').value;
+    const margin = document.getElementById('s-margin').value;
+    await set(ref(db, `stats/${currentYear}/${month}`), {
+      sold: Number(sold) || 0,
+      margin: Number(margin) || 0,
+    });
+    closeAddModal();
+  };
+</script>
+</div>
+</body>
+</html>
